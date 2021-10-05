@@ -12,7 +12,15 @@ public class ListarFornecedor {
         for (int i = 0; i < mostra.size(); i++) {
             System.out.println(mostra.get(i).getNomeFornecedor());
             System.out.println(mostra.get(i).getRazaoSocial());
-            //por enquanto isso...
+            System.out.println(mostra.get(i).getCNPJ());
+            System.out.println(mostra.get(i).getEmail());
+            System.out.println(mostra.get(i).getTelefone());
+            System.out.println(mostra.get(i).getCidade());
+            System.out.println(mostra.get(i).getEstado());
+            System.out.println(mostra.get(i).getPais());
+            System.out.println(mostra.get(i).getEndereco());
+            System.out.println(mostra.get(i).getNumero());
+            System.out.println(mostra.get(i).getDataCadastro());
         }
     }
 

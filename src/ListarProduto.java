@@ -12,7 +12,8 @@ public class ListarProduto {
         for (int i = 0; i < mostra.size(); i++) {
             System.out.println(mostra.get(i).getDescricao());
             System.out.println(mostra.get(i).getQuantidade());
-            //por enquanto isso...
+            System.out.println(mostra.get(i).getPreço());
+            System.out.println(mostra.get(i).getFornecedor());
         }
     }
 

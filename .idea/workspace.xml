@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2246f2f4-de84-4d27-ade1-5bcf4655f9b3" name="Changes" comment="Fazendo ListarFornecedor">
+    <list default="true" id="2246f2f4-de84-4d27-ade1-5bcf4655f9b3" name="Changes" comment="Fazendo ListarProduto, ListarVendedor e o App">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ListarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListarCliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ListarFornecedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListarFornecedor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ListarProduto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListarProduto.java" afterDir="false" />
@@ -98,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633467198342</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fazendo ListarProduto, ListarVendedor e o App">
+      <created>1633471578035</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1633471578035</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +124,7 @@
     <MESSAGE value="construtor" />
     <MESSAGE value="construtor add" />
     <MESSAGE value="Fazendo ListarFornecedor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fazendo ListarFornecedor" />
+    <MESSAGE value="Fazendo ListarProduto, ListarVendedor e o App" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fazendo ListarProduto, ListarVendedor e o App" />
   </component>
 </project>
