@@ -1,16 +1,35 @@
 public class CadastrarFornecedor {
 
-    String NomeFornecedor;
-    String RazaoSocial;
-    String CNPJ;
-    String Email;
-    String Telefone;
-    String Cidade;
-    String Estado;
-    String Pais;
-    String Endereco;
-    int Numero;
-    String DataCadastro;
+    private String NomeFornecedor;
+    private String RazaoSocial;
+    private String CNPJ;
+    private String Email;
+    private String Telefone;
+    private String Cidade;
+    private String Estado;
+    private String Pais;
+    private String Endereco;
+    private int Numero;
+    private String DataCadastro;
+
+    public CadastrarFornecedor(String NomeFornecedor, String RazaoSocial, String CNPJ,String Email,
+                            String Telefone, String Cidade, String Estado, String Pais, String Endereço,
+                            String DataDeCadastro, int Numero){
+        this.NomeFornecedor = NomeFornecedor;
+        this.RazaoSocial = RazaoSocial;
+        this.CNPJ = CNPJ;
+        this.Telefone = Telefone;
+        this.Email = Email;
+        this.Cidade = Cidade;
+        this.Estado = Estado;
+        this.Pais = Pais;
+        this.Endereço = Endereço;
+        this.DataDeCadastro= DataDeCadastro;
+        this.Numero = Numero;
+    }
+
+
+
 
     public String getNomeFornecedor() {
         return NomeFornecedor;
