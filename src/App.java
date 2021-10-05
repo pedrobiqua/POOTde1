@@ -10,9 +10,14 @@ public class App {
         CadastrarVendedor vendedor1 = new CadastrarVendedor("Toco", "Silva", "26 de outubro", "3434-3535", "909999-999990-78", "Curitiba", "Paraná", "Brasil", "Rua Rui Barbosa", "05 de out", "toco123", "12345");
 
         ListarCliente lista = new ListarCliente();
+        ListarFornecedor listaFornecedor = new ListarFornecedor();
+
+        listaFornecedor.adicCadastrarFornecedor(fornecedor1);
 
         lista.adicCadastrarCliente(cliente1);
 
+        listaFornecedor.MostarFornecedor(listaFornecedor.getListarFornecedor());
+        System.out.println("----------------------------------------------");
         lista.MostarClientes(lista.getListarCliente());
 
     }
