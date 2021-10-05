@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2246f2f4-de84-4d27-ade1-5bcf4655f9b3" name="Changes" comment="add metodo get e set">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CadastrarProduto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CadastrarProduto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CadastrarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CadastrarCliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CadastrarVendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CadastrarVendedor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +34,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Agenda/src" />
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="POOTde1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

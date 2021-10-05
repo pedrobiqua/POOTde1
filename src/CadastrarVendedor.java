@@ -13,6 +13,8 @@ public class CadastrarVendedor {
     String login;
     String Senha;
 
+
+
     public String getNome() {
         return Nome;
     }
