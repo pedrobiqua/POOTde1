@@ -1,18 +1,34 @@
 public class CadastrarVendedor {
 
-    String Nome;
-    String Sobrenome;
-    String dataDeNascimento;
-    String Telefone;
-    String CPF;
-    String Cidade;
-    String Estado;
-    String Pais;
-    String Endereço;
-    String DataDeCadastro;
-    String login;
-    String Senha;
+    private String Nome;
+    private String Sobrenome;
+    private String dataDeNascimento;
+    private String Telefone;
+    private String CPF;
+    private String Cidade;
+    private String Estado;
+    private String Pais;
+    private String Endereço;
+    private String DataDeCadastro;
+    private String login;
+    private String Senha;
 
+    public CadastrarVendedor(String Nome, String Sobrenome, String dataDeNascimento,
+                               String Telefone, String CPF,  String Cidade, String Estado, String Pais, String Endereço,
+                               String DataDeCadastro, String login, String Senha){
+        this.Nome = Nome;
+        this.Sobrenome = Sobrenome;
+        this.dataDeNascimento = dataDeNascimento;
+        this.Telefone = Telefone;
+        this.CPF = CPF;
+        this.Cidade = Cidade;
+        this.Estado = Estado;
+        this.Pais = Pais;
+        this.Endereço = Endereço;
+        this.DataDeCadastro= DataDeCadastro;
+        this.login = login;
+        this.Senha = Senha;
+    }
 
 
     public String getNome() {

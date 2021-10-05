@@ -1,9 +1,16 @@
 public class CadastrarProduto {
 
-    String Descricao;
-    int Quantidade;
-    Float Preço;
-    String Fornecedor;
+    private String Descricao;
+    private int Quantidade;
+    private Float Preço;
+    private String Fornecedor;
+
+    public CadastrarProduto(String Descricao, int Quantidade, Float Preço,String Fornecedor){
+        this.Descricao = Descricao;
+        this.Quantidade = Quantidade;
+        this.Preço = Preço;
+        this.Fornecedor = Fornecedor;
+    }
 
     public String getDescricao() {
         return Descricao;
