@@ -8,7 +8,7 @@ public class CadastrarCliente {
     private String CPF;
     private String Cidade;
     private String Estado;
-    private String Pais;
+    private String Pais = "Brasil";
     private String Endereço;
     private String DataDeCadastro;
     private int Numero;
