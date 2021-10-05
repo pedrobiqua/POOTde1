@@ -9,7 +9,7 @@ public class ListarCliente {
 
     }
 
-    public void MostarClientes(ArrayList<CadastrarCliente> mostra) {
+    public void MostraClientes(ArrayList<CadastrarCliente> mostra) {
         for (int i = 0; i < mostra.size(); i++) {
             System.out.println(mostra.get(i).getNome());
             System.out.println(mostra.get(i).getSobrenome());

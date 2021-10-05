@@ -6,16 +6,14 @@ public class ListarFornecedor {
 
     public ListarFornecedor() {
         this.ListarFornecedor = new ArrayList<CadastrarFornecedor>();
-
     }
 
-    public void MostarFornecedor(ArrayList<CadastrarFornecedor> mostra) {
+    public void MostraFornecedor(ArrayList<CadastrarFornecedor> mostra) {
         for (int i = 0; i < mostra.size(); i++) {
             System.out.println(mostra.get(i).getNomeFornecedor());
             System.out.println(mostra.get(i).getRazaoSocial());
             //por enquanto isso...
         }
-
     }
 
     public void adicCadastrarFornecedor(CadastrarFornecedor CadastrarFornecedor){

@@ -9,16 +9,25 @@ public class App {
         CadastrarProduto produto1 = new CadastrarProduto("Coca Geladinha", 10, 3.50f, "João tio da coca");
         CadastrarVendedor vendedor1 = new CadastrarVendedor("Toco", "Silva", "26 de outubro", "3434-3535", "909999-999990-78", "Curitiba", "Paraná", "Brasil", "Rua Rui Barbosa", "05 de out", "toco123", "12345");
 
+
         ListarCliente lista = new ListarCliente();
         ListarFornecedor listaFornecedor = new ListarFornecedor();
+        ListarProduto listaProduto = new ListarProduto();
+        ListarVendedor listaVendedor = new ListarVendedor();
+
 
         listaFornecedor.adicCadastrarFornecedor(fornecedor1);
-
+        listaProduto.adicCadastrarProduto(produto1);
         lista.adicCadastrarCliente(cliente1);
+        listaVendedor.adicCadastrarVendedor(vendedor1);
 
-        listaFornecedor.MostarFornecedor(listaFornecedor.getListarFornecedor());
+
+        listaFornecedor.MostraFornecedor(listaFornecedor.getListarFornecedor());
         System.out.println("----------------------------------------------");
-        lista.MostarClientes(lista.getListarCliente());
-
+        lista.MostraClientes(lista.getListarCliente());
+        System.out.println("----------------------------------------------");
+        listaProduto.MostraProduto(listaProduto.getListarProduto());
+        System.out.println("----------------------------------------------");
+        listaVendedor.MostraVendedor(listaVendedor.getListarVendedor());
     }
 }
