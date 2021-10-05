@@ -3,7 +3,7 @@ public class CadastrarProduto {
     private String Descricao;
     private int Quantidade;
     private Float Preço;
-    private String Fornecedor;
+    private String Fornecedor; //Depois colocar para tipo Cadastrar Fornecedor
 
     public CadastrarProduto(String Descricao, int Quantidade, Float Preço,String Fornecedor){
         this.Descricao = Descricao;
