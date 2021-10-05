@@ -4,6 +4,8 @@ public class App {
 
         System.out.println("O sistema ainda está em desenvolvimento");
 
-        
+        ListarCliente lista = new ListarCliente();
+
+        lista.MostarClientes();
     }
 }

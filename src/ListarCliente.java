@@ -3,8 +3,8 @@ public class ListarCliente {
         //variavel = variavel Faz um bagulho
     }
 
-    public static void MostarClientes() {
+    public void MostarClientes() {
         //Aplicação
-        
+        System.out.println("Mostrando cliente");
     }
 }
