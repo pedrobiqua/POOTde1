@@ -13,8 +13,8 @@ public class CadastrarFornecedor {
     private String DataCadastro;
 
     public CadastrarFornecedor(String NomeFornecedor, String RazaoSocial, String CNPJ,String Email,
-                            String Telefone, String Cidade, String Estado, String Pais, String Endereço,
-                            String DataDeCadastro, int Numero){
+                            String Telefone, String Cidade, String Estado, String Pais, String Endereco,
+                            String DataCadastro, int Numero){
         this.NomeFornecedor = NomeFornecedor;
         this.RazaoSocial = RazaoSocial;
         this.CNPJ = CNPJ;
@@ -23,8 +23,8 @@ public class CadastrarFornecedor {
         this.Cidade = Cidade;
         this.Estado = Estado;
         this.Pais = Pais;
-        this.Endereço = Endereço;
-        this.DataDeCadastro= DataDeCadastro;
+        this.Endereco = Endereco;
+        this.DataCadastro= DataCadastro;
         this.Numero = Numero;
     }
 
