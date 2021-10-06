@@ -71,13 +71,13 @@ public class Menu {
 
                     CadastrarCliente cliente = new CadastrarCliente(nome, sobrenome, dataNascimento, Telefone, CPF, Cidade, Estado, Pais, Endereço, DataDeCadastro, Numero);
                     ListaDeCliente.adicCadastrarCliente(cliente);
-                    
                     break;
                 
                 case 2:
                     //Roda essa opção
                     ListaDeCliente.MostraClientes(ListaDeCliente.getListarCliente());
                     break;
+
 
                 case 3:
                     //Roda essa parte do código
@@ -119,51 +119,60 @@ public class Menu {
                     CadastrarFornecedor Fornecedor = new CadastrarFornecedor(NomeFornecedor, RazaoSocial, CNPJ, Email, Telefone3, Cidade3, Estado3, Pais3, Endereco3, DataCadastro, Numero3);
                     listarFornecedor.adicCadastrarFornecedor(Fornecedor);
                     break;
+
                 case 4:
                     listarFornecedor.MostraFornecedor(listarFornecedor.getListarFornecedor());
                     break;
+
+
                 case 5:
                     Scanner scanner5 = new Scanner(System.in);
                     System.out.print("Nome: ");
-                    String nome = scanner.next();
+                    String nome5 = scanner5.next();
 
                     System.out.print("Sobrenome: ");
-                    String sobrenome = scanner.next();
+                    String sobrenome5 = scanner5.next();
 
                     System.out.print("Data de nascimento: ");
-                    String dataNascimento = scanner.next();
+                    String dataNascimento5 = scanner5.next();
                     
                     System.out.print("Telefone: ");
-                    String Telefone = scanner.next();
+                    String Telefone5 = scanner5.next();
 
                     System.out.print("CPF: ");
-                    String CPF = scanner.next();
+                    String CPF5 = scanner5.next();
+
+                    System.out.print("País: ");
+                    String Pais5 = scanner5.next();
 
                     System.out.print("Cidade: ");
-                    String Cidade = scanner.next();
+                    String Cidade5 = scanner5.next();
 
                     System.out.print("Estado: ");
-                    String Estado = scanner.next();
+                    String Estado5 = scanner5.next();
 
                     System.out.print("Endereço: ");
-                    String Endereço = scanner.next();
+                    String Endereço5 = scanner5.next();
 
                     System.out.print("Data de Cadastro: ");
-                    String DataDeCadastro = scanner.next();
+                    String DataDeCadastro5 = scanner5.next();
 
+                    System.out.print("Login: ");
+                    String login = scanner5.next();
 
+                    System.out.print("Senha: ");
+                    String senha = scanner5.next();
 
-                    CadastrarVendedor vendedor = new CadastrarVendedor(nome, sobrenome, dataNascimento, Telefone, CPF, Cidade, Estado, Pais, Endereço, DataDeCadastro);
-                    ListaDeVendedor.adicCadastrarVendedor(vendedor);
-                    
+                    CadastrarVendedor vendedor = new CadastrarVendedor(nome5, sobrenome5, dataNascimento5, Telefone5, CPF5, Cidade5, Estado5, Pais5, Endereço5, DataDeCadastro5, login, senha);
+                    listarVendedor.adicCadastrarVendedor(vendedor);
                     break;
-                                    
+
                 case 6:
 
-                    ListaDeVendedor.MostraVendedor(ListaDeVendedor.getListarVendedor());
-
+                    listarVendedor.MostraVendedor(listarVendedor.getListarVendedor());
                     break;
                 
+
                 case 7:
                     Scanner scanner7 = new Scanner(System.in);
                     System.out.print("Descrição do produto: ");
@@ -186,6 +195,7 @@ public class Menu {
                     listarProduto.MostraProduto(listarProduto.getListarProduto());
                     break;
                 
+                    
                 case 9:
                     System.out.println("Saindo da solução. . . ");
                     menu.close();
