@@ -108,7 +108,7 @@ public class Menu {
                     String Pais3 = scanner3.next();
 
                     System.out.print("Endereço: ");
-                    String Endereco = scanner3.next();
+                    String Endereco3 = scanner3.next();
 
                     System.out.print("Numero: ");
                     int Numero3 = scanner3.nextInt();
@@ -116,7 +116,7 @@ public class Menu {
                     System.out.print("Data de Cadastro: ");
                     String DataCadastro = scanner3.next();
 
-                    CadastrarFornecedor Fornecedor = new CadastrarFornecedor(NomeFornecedor, RazaoSocial, CNPJ, Email, Telefone3, Cidade3, Estado3, Pais3, Endereco, Numero3, DataCadastro);
+                    CadastrarFornecedor Fornecedor = new CadastrarFornecedor(NomeFornecedor, RazaoSocial, CNPJ, Email, Telefone3, Cidade3, Estado3, Pais3, Endereco3, DataCadastro, Numero3);
                     listarFornecedor.adicCadastrarFornecedor(Fornecedor);
                     break;
                 case 4:
@@ -140,9 +140,9 @@ public class Menu {
                     Float Preço = scanner7.nextFloat();
 
                     System.out.print("Fornecedor");
-                    String Fornecedor = scanner7.next();
+                    String Fornecedor7 = scanner7.next();
 
-                    CadastrarProduto produto = new CadastrarProduto(Descrição, Quantidade, Preço, Fornecedor);
+                    CadastrarProduto produto = new CadastrarProduto(Descrição, Quantidade, Preço, Fornecedor7);
                     listarProduto.adicCadastrarProduto(produto);
                     break;
                 
