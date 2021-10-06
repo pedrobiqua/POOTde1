@@ -123,9 +123,45 @@ public class Menu {
                     listarFornecedor.MostraFornecedor(listarFornecedor.getListarFornecedor());
                     break;
                 case 5:
+                    Scanner scanner5 = new Scanner(System.in);
+                    System.out.print("Nome: ");
+                    String nome = scanner.next();
+
+                    System.out.print("Sobrenome: ");
+                    String sobrenome = scanner.next();
+
+                    System.out.print("Data de nascimento: ");
+                    String dataNascimento = scanner.next();
+                    
+                    System.out.print("Telefone: ");
+                    String Telefone = scanner.next();
+
+                    System.out.print("CPF: ");
+                    String CPF = scanner.next();
+
+                    System.out.print("Cidade: ");
+                    String Cidade = scanner.next();
+
+                    System.out.print("Estado: ");
+                    String Estado = scanner.next();
+
+                    System.out.print("Endereço: ");
+                    String Endereço = scanner.next();
+
+                    System.out.print("Data de Cadastro: ");
+                    String DataDeCadastro = scanner.next();
+
+
+
+                    CadastrarVendedor vendedor = new CadastrarVendedor(nome, sobrenome, dataNascimento, Telefone, CPF, Cidade, Estado, Pais, Endereço, DataDeCadastro);
+                    ListaDeVendedor.adicCadastrarVendedor(vendedor);
+                    
                     break;
-                
+                                    
                 case 6:
+
+                    ListaDeVendedor.MostraVendedor(ListaDeVendedor.getListarVendedor());
+
                     break;
                 
                 case 7:
