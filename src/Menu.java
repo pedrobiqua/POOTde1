@@ -6,6 +6,9 @@ public class Menu {
 
         Boolean running = true;
         ListarCliente ListaDeCliente = new ListarCliente();
+        ListarProduto listarProduto = new ListarProduto();
+        ListarFornecedor listarFornecedor = new ListarFornecedor();
+        ListarVendedor listarVendedor = new ListarVendedor();
 
         while (running) {
 
@@ -89,9 +92,25 @@ public class Menu {
                     break;
                 
                 case 7:
+                    Scanner scanner7 = new Scanner(System.in);
+                    System.out.print("Descrição do produto: ");
+                    String Descrição = scanner7.next();
+
+                    System.out.print("Quantidade de produtos: ");
+                    int Quantidade = scanner7.nextInt();
+
+                    System.out.print("Preço do produto(unidade): ");
+                    Float Preço = scanner7.nextFloat();
+
+                    System.out.print("Fornecedor");
+                    String Fornecedor = scanner7.next();
+
+                    CadastrarProduto produto = new CadastrarProduto(Descrição, Quantidade, Preço, Fornecedor);
+                    listarProduto.adicCadastrarProduto(produto);
                     break;
                 
                 case 8:
+                    listarProduto.MostraProduto(listarProduto.getListarProduto());
                     break;
                 
                 case 9:
