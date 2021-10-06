@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Menu {
-    
+
     public static void RodarMenu() {
 
         Boolean running = true;
@@ -12,14 +12,19 @@ public class Menu {
             Scanner menu = new Scanner(System.in);
 
             System.out.print("##--VENDA DE CONTAS DE LOL--##\n\n");
-		    System.out.print("|-----------------------------|\n");
-		    System.out.print("| Opção 1 - Cadastrar Cliente |\n");
-		    System.out.print("| Opção 2 - Listar Cliente    |\n");
-		    System.out.print("| Opção 3 - Ainda não existe  |\n");
-		    System.out.print("| Opção 4 - Sair              |\n");
-            System.out.print("| Project by: Pedro, Thiago e |\n");
-            System.out.print("|             Lukas           |\n");
-		    System.out.print("|-----------------------------|\n");
+		    System.out.print("|-----------------------------  |\n");
+		    System.out.print("| Opção 1 - Cadastrar Cliente   |\n");
+		    System.out.print("| Opção 2 - Listar Cliente      |\n");
+            System.out.print("| Opção 3 - Cadastrar Fornecedor|\n");
+            System.out.print("| Opção 4 - Listar Fornecedor   |\n");
+		    System.out.print("| Opção 5 - Cadastrar Vendedor  |\n");
+            System.out.print("| Opção 6 - Listar Vendedor     |\n");
+            System.out.print("| Opção 7 - Cadastrar Produto   |\n");
+            System.out.print("| Opção 8 - Listar Produto      |\n");
+		    System.out.print("| Opção 9 - Sair                |\n");
+            System.out.print("| Project by: Pedro, Thiago e   |\n");
+            System.out.print("|             Lukas             |\n");
+		    System.out.print("|-----------------------------  |\n");
 		    System.out.print("Digite uma opção: ");
 
             int opcao = menu.nextInt();
@@ -75,6 +80,21 @@ public class Menu {
                     //Roda essa parte
                     break;
                 case 4:
+                    
+                    break;
+                case 5:
+                    break;
+                
+                case 6:
+                    break;
+                
+                case 7:
+                    break;
+                
+                case 8:
+                    break;
+                
+                case 9:
                     System.out.println("Saindo da solução. . . ");
                     menu.close();
                     running = false;
