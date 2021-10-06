@@ -1,10 +1,11 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-
+        
         System.out.println("O sistema ainda está em desenvolvimento");
 
-        CadastrarCliente cliente1 = new CadastrarCliente("Pedro", "Quadros", "24 de maio", "3333-3333", "909090-9090-09", "Curitiba", "Paraná", "Brasil", "Rua do Governador", "05 de out", 01);
+        Menu.RodarMenu();
+
+        /*CadastrarCliente cliente1 = new CadastrarCliente("Pedro", "Quadros", "24 de maio", "3333-3333", "909090-9090-09", "Curitiba", "Paraná", "Brasil", "Rua do Governador", "05 de out", 01);
         CadastrarCliente cliente2 = new CadastrarCliente("Pedro", "Quadros", "24 de maio", "3333-3333", "909090-9090-09", "Curitiba", "Paraná", "Brasil", "Rua do Governador", "05 de out", 02);
         CadastrarFornecedor fornecedor1 = new CadastrarFornecedor("João", "João tio da Coca", "9000777", "cocadojoao@gmail.com", "3490-9087", "Matinhos", "Paraná", "Brasil", "Rua Guarapuava", "05 de out", 01);
         CadastrarProduto produto1 = new CadastrarProduto("Coca Geladinha", 10, 3.50f, "João tio da coca");
@@ -30,6 +31,6 @@ public class App {
         System.out.println("----------------------------------------------");
         listaProduto.MostraProduto(listaProduto.getListarProduto());
         System.out.println("----------------------------------------------");
-        listaVendedor.MostraVendedor(listaVendedor.getListarVendedor());
+        listaVendedor.MostraVendedor(listaVendedor.getListarVendedor());*/
     }
 }
