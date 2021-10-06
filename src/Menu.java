@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Menu {
+    
     public static void RodarMenu() {
 
         Boolean running = true;
@@ -10,7 +11,7 @@ public class Menu {
 
             Scanner menu = new Scanner(System.in);
 
-            System.out.print("##--Sistema de Loja--##\n\n");
+            System.out.print("##--VENDA DE CONTAS DE LOL--##\n\n");
 		    System.out.print("|-----------------------------|\n");
 		    System.out.print("| Opção 1 - Cadastrar Cliente |\n");
 		    System.out.print("| Opção 2 - Listar Cliente    |\n");
@@ -26,8 +27,42 @@ public class Menu {
             switch (opcao) {
                 case 1:
                     //Roda essa parte do código
-                    CadastrarCliente cliente1 = new CadastrarCliente("Pedro", "Quadros", "24 de maio", "3333-3333", "909090-9090-09", "Curitiba", "Paraná", "Brasil", "Rua do Governador", "05 de out", 01);
-                    ListaDeCliente.adicCadastrarCliente(cliente1);
+                    Scanner scanner = new Scanner(System.in);
+                    System.out.print("Nome: ");
+                    String nome = scanner.next();
+
+                    System.out.print("Sobrenome: ");
+                    String sobrenome = scanner.next();
+
+                    System.out.print("Sobrenome: ");
+                    String dataNascimento = scanner.next();
+                    
+                    System.out.print("Telefone: ");
+                    String Telefone = scanner.next();
+
+                    System.out.print("CPF: ");
+                    String CPF = scanner.next();
+
+                    System.out.print("Cidade: ");
+                    String Cidade = scanner.next();
+
+                    System.out.print("Estado: ");
+                    String Estado = scanner.next();
+
+                    System.out.print("País: ");
+                    String Pais = scanner.next();
+
+                    System.out.print("Endereço: ");
+                    String Endereço = scanner.next();
+
+                    System.out.print("Data de Cadastro: ");
+                    String DataDeCadastro = scanner.next();
+
+                    System.out.print("Numero: ");
+                    int Numero = scanner.nextInt();
+
+                    CadastrarCliente cliente = new CadastrarCliente(nome, sobrenome, dataNascimento, Telefone, CPF, Cidade, Estado, Pais, Endereço, DataDeCadastro, Numero);
+                    ListaDeCliente.adicCadastrarCliente(cliente);
                     
                     break;
                 
