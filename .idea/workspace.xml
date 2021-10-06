@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2246f2f4-de84-4d27-ade1-5bcf4655f9b3" name="Changes" comment="Fazendo ListarProduto, ListarVendedor e o App">
+    <list default="true" id="2246f2f4-de84-4d27-ade1-5bcf4655f9b3" name="Changes" comment="Adicionando os get's em ListarCliente, ListarFornecedor, ListarProduto e ListarVendedor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListarCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListarFornecedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListarFornecedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListarProduto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListarProduto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListarVendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListarVendedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633471578035</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adicionando os get's em ListarCliente, ListarFornecedor, ListarProduto e ListarVendedor">
+      <created>1633472309919</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1633472309919</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +129,7 @@
     <MESSAGE value="construtor add" />
     <MESSAGE value="Fazendo ListarFornecedor" />
     <MESSAGE value="Fazendo ListarProduto, ListarVendedor e o App" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fazendo ListarProduto, ListarVendedor e o App" />
+    <MESSAGE value="Adicionando os get's em ListarCliente, ListarFornecedor, ListarProduto e ListarVendedor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando os get's em ListarCliente, ListarFornecedor, ListarProduto e ListarVendedor" />
   </component>
 </project>

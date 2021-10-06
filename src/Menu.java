@@ -80,10 +80,47 @@ public class Menu {
                     break;
 
                 case 3:
-                    //Roda essa parte
+                    //Roda essa parte do código
+                    Scanner scanner3 = new Scanner(System.in);
+
+                    System.out.print("Nome do Fornecedor: ");
+                    String NomeFornecedor = scanner3.next();
+
+                    System.out.print("Razão Social: ");
+                    String RazaoSocial = scanner3.next();
+
+                    System.out.print("CNPJ: ");
+                    String CNPJ = scanner3.next();
+
+                    System.out.print("Email: ");
+                    String Email = scanner3.next();
+
+                    System.out.print("Telefone: ");
+                    String Telefone3 = scanner3.next();
+
+                    System.out.print("Cidade: ");
+                    String Cidade3 = scanner3.next();
+
+                    System.out.print("Estado: ");
+                    String Estado3 = scanner3.next();
+
+                    System.out.print("País: ");
+                    String Pais3 = scanner3.next();
+
+                    System.out.print("Endereço: ");
+                    String Endereco = scanner3.next();
+
+                    System.out.print("Numero: ");
+                    int Numero3 = scanner3.nextInt();
+
+                    System.out.print("Data de Cadastro: ");
+                    String DataCadastro = scanner3.next();
+
+                    CadastrarFornecedor Fornecedor = new CadastrarFornecedor(NomeFornecedor, RazaoSocial, CNPJ, Email, Telefone3, Cidade3, Estado3, Pais3, Endereco, Numero3, DataCadastro);
+                    listarFornecedor.adicCadastrarFornecedor(Fornecedor);
                     break;
                 case 4:
-                    
+                    listarFornecedor.MostraFornecedor(listarFornecedor.getListarFornecedor());
                     break;
                 case 5:
                     break;
