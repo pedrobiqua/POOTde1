@@ -11,17 +11,19 @@ public class ListarCliente {
 
     public void MostraClientes(ArrayList<CadastrarCliente> mostra) {
         for (int i = 0; i < mostra.size(); i++) {
-            System.out.println(mostra.get(i).getNome());
-            System.out.println(mostra.get(i).getSobrenome());
+            System.out.println("|" + mostra.get(i).getNome() + " " + mostra.get(i).getSobrenome());
+            System.out.println("|___________________________________");
             System.out.println(mostra.get(i).getDataDeNascimento());
-            System.out.println(mostra.get(i).getTelefone());
-            System.out.println(mostra.get(i).getCPF());
-            System.out.println(mostra.get(i).getCidade());
-            System.out.println(mostra.get(i).getEstado());
-            System.out.println(mostra.get(i).getPais());
-            System.out.println(mostra.get(i).getEndereço());
-            System.out.println(mostra.get(i).getDataDeCadastro());
-            System.out.println(mostra.get(i).getNumero());
+            System.out.println("|___________________________________");
+            System.out.println("| Telefone: " + mostra.get(i).getTelefone());
+            System.out.println("| CPF: " + mostra.get(i).getCPF());
+            System.out.println("| Cidade: " + mostra.get(i).getCidade()+" Estado: " + mostra.get(i).getEstado());
+            System.out.println("| Endereço: " + mostra.get(i).getEndereço());
+            System.out.println("| País: " + mostra.get(i).getPais());
+            System.out.println("|___________________________________");
+            System.out.println("| Data do Cadastro: " + mostra.get(i).getDataDeCadastro());
+            System.out.println("| Numero ID do cliente: " + mostra.get(i).getNumero());
+            System.out.println("|___________________________________");
         }
     }
 
