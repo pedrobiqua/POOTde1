@@ -11,6 +11,7 @@ public class ListarCliente {
 
     public void MostraClientes(ArrayList<CadastrarCliente> mostra) {
         for (int i = 0; i < mostra.size(); i++) {
+            System.out.println("|___________________________________|");
             System.out.println("|" + mostra.get(i).getNome() + " " + mostra.get(i).getSobrenome());
             System.out.println("|___________________________________");
             System.out.println("|Data de Nascimento: " + mostra.get(i).getDataDeNascimento());
