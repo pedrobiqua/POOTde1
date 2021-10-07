@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
 public class RegistrarVenda {
-    private CadastrarCliente clienteDaVenda;
-    private String tipoPagamento;
+    private int clienteDaVenda;
     private float precoProduto;
     private float pagCredito;
     private float pagDebito;
@@ -13,6 +12,7 @@ public class RegistrarVenda {
         for (int i = 0; i < ArrayDeLista.getListarCliente().size(); i++) {
             if (ArrayDeLista.getListarCliente().get(i).getNumero() == numeroCliente) {
                 
+                clienteDaVenda = ArrayDeLista.getListarCliente().get(i).getNumero();
                 var listaProdutos = new ListarProduto();
                 listaProdutos.MostraProduto(ArrayDeLista.getListarProduto());
                 Scanner scannerRegistro = new Scanner(System.in);
@@ -29,22 +29,38 @@ public class RegistrarVenda {
                         switch (formaPag) {
                             case "crédito": 
 
+                                
                                 float precoCredito = ArrayDeLista.getListarProduto().get(j).getPreço();
                                 pagCredito += precoCredito;
 
                                 int diminuirEstoque = ArrayDeLista.getListarProduto().get(j).getQuantidade() - 1;
+                                
+                                ArrayDeLista.getListarProduto().get(j).setQuantidade(diminuirEstoque);
                                 System.out.printf("O estoque do produto comprado agora é ", diminuirEstoque);
                                 break;
                         
                             case "débito":
                                 float precoDebito = ArrayDeLista.getListarProduto().get(j).getPreço();
-                                pagCredito += precoDebito;
+                                pagDebito += precoDebito;
 
-                                int diminuirEstoque1 = ArrayDeLista.getListarProduto().get(j).getQuantidade() - 1;                               
+                                int diminuirEstoque1 = ArrayDeLista.getListarProduto().get(j).getQuantidade() - 1;
+                                
+                                ArrayDeLista.getListarProduto().get(j).setQuantidade(diminuirEstoque1);
                                 System.out.printf("O estoque do produto comprado agora é ", diminuirEstoque1);
+                                break;
+                            
+                            case "dinheiro":
+                                float precoDinheiro = ArrayDeLista.getListarProduto().get(j).getPreço();
+                                pagDinheiro += precoDinheiro;
+
+                                int diminuirEstoque2 = ArrayDeLista.getListarProduto().get(j).getQuantidade() - 1;
+                                
+                                ArrayDeLista.getListarProduto().get(j).setQuantidade(diminuirEstoque2);
+                                System.out.printf("O estoque do produto comprado agora é ", diminuirEstoque2);
                                 break;
 
                             default:
+                                System.out.println("Nenhum tipo de pagamento foi aceito");
                                 break;
                         }
 
@@ -61,10 +77,17 @@ public class RegistrarVenda {
     }
 
     public RegistrarVenda(int numeroCliente){
-        
+        Vender(numeroCliente);// Toda vez que o programa instaciar o RegistrarVenda irá rodar a função de venda, utilizando o numero do cliente
+        //Digitado anterioriamente.
         
     }
-    public static void ValidarVenda() {
-        
+    public static void ValidarVenda(int numeroCliente) {
+        for (int i = 0; i < ArrayDeLista.getRegistro().size(); i++) {
+            if (ArrayDeLista.getRegistro().get(i).clienteDaVenda == numeroCliente) {
+                System.out.println("Compra autorizada");
+            }else{
+                System.out.println("Compra não autorizada");
+            }
+        }
     }
 }
