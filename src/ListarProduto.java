@@ -18,7 +18,7 @@ public class ListarProduto {
     }
 
     public void adicCadastrarProduto(CadastrarProduto CadastrarProduto) {
-        this.ListarProduto.add(CadastrarProduto); //Adiciona na ListarProduto
+        ArrayDeLista.getListarProduto().add(CadastrarProduto); //Adiciona na ListarProduto
     }
 
     public ArrayList<CadastrarProduto> getListarProduto() {

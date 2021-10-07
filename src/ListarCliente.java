@@ -26,7 +26,7 @@ public class ListarCliente {
     }
 
     public void adicCadastrarCliente(CadastrarCliente cadastrarCliente){
-        this.ListarCliente.add(cadastrarCliente); //Adiciona na listarCliente
+        ArrayDeLista.getListarCliente().add(cadastrarCliente);
     }
 
     public ArrayList<CadastrarCliente> getListarCliente() {

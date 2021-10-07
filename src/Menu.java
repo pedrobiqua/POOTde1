@@ -75,7 +75,14 @@ public class Menu {
                 
                 case 2:
                     //Roda essa opção
-                    ListaDeCliente.MostraClientes(ListaDeCliente.getListarCliente());
+                    ListaDeCliente.MostraClientes(ArrayDeLista.getListarCliente());
+                    Scanner scanner2 = new Scanner(System.in);
+		
+		            for(int i = 0; i < 1; i++) {
+
+			            System.out.print(" Precione enter para continuar: ");
+			            scanner2.nextLine();
+		            }
                     break;
 
 
@@ -121,7 +128,14 @@ public class Menu {
                     break;
 
                 case 4:
-                    listarFornecedor.MostraFornecedor(listarFornecedor.getListarFornecedor());
+                    listarFornecedor.MostraFornecedor(ArrayDeLista.getListarFornecedor());
+                    Scanner scanner4 = new Scanner(System.in);
+		
+		            for(int i = 0; i < 1; i++) {
+
+			            System.out.print(" Precione enter para continuar: ");
+			            scanner4.nextLine();
+		            }
                     break;
 
 
@@ -169,7 +183,14 @@ public class Menu {
 
                 case 6:
 
-                    listarVendedor.MostraVendedor(listarVendedor.getListarVendedor());
+                    listarVendedor.MostraVendedor(ArrayDeLista.getListarVendedor());
+                    Scanner scanner6 = new Scanner(System.in);
+		
+		            for(int i = 0; i < 1; i++) {
+
+			            System.out.print(" Precione enter para continuar: ");
+			            scanner6.nextLine();
+		            }
                     break;
                 
 
@@ -192,7 +213,14 @@ public class Menu {
                     break;
                 
                 case 8:
-                    listarProduto.MostraProduto(listarProduto.getListarProduto());
+                    listarProduto.MostraProduto(ArrayDeLista.getListarProduto());
+                    Scanner scanner8 = new Scanner(System.in);
+		
+		            for(int i = 0; i < 1; i++) {
+
+			            System.out.print(" Precione enter para continuar: ");
+			            scanner8.nextLine();
+		            }
                     break;
                 
                     

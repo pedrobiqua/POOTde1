@@ -25,7 +25,7 @@ public class ListarFornecedor {
     }
 
     public void adicCadastrarFornecedor(CadastrarFornecedor CadastrarFornecedor){
-        this.ListarFornecedor.add(CadastrarFornecedor); //Adiciona na ListarFornecedor
+        ArrayDeLista.getListarFornecedor().add(CadastrarFornecedor); //Adiciona na ListarFornecedor
     }
 
     public ArrayList<CadastrarFornecedor> getListarFornecedor() {

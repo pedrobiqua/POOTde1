@@ -28,9 +28,6 @@ public class CadastrarFornecedor {
         this.Numero = Numero;
     }
 
-
-
-
     public String getNomeFornecedor() {
         return NomeFornecedor;
     }
