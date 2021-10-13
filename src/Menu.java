@@ -9,25 +9,28 @@ public class Menu {
         ListarProduto listarProduto = new ListarProduto();
         ListarFornecedor listarFornecedor = new ListarFornecedor();
         ListarVendedor listarVendedor = new ListarVendedor();
+        ListarVendas listarVendas = new ListarVendas();
 
         while (running) {
 
             Scanner menu = new Scanner(System.in);
 
             System.out.print("##--VENDA DE CONTAS DE LOL--##\n\n");
-		    System.out.print("|-----------------------------  |\n");
-		    System.out.print("| Opção 1 - Cadastrar Cliente   |\n");
-		    System.out.print("| Opção 2 - Listar Cliente      |\n");
-            System.out.print("| Opção 3 - Cadastrar Fornecedor|\n");
-            System.out.print("| Opção 4 - Listar Fornecedor   |\n");
-		    System.out.print("| Opção 5 - Cadastrar Vendedor  |\n");
-            System.out.print("| Opção 6 - Listar Vendedor     |\n");
-            System.out.print("| Opção 7 - Cadastrar Produto   |\n");
-            System.out.print("| Opção 8 - Listar Produto      |\n");
-		    System.out.print("| Opção 9 - Sair                |\n");
-            System.out.print("| Project by: Pedro, Thiago e   |\n");
-            System.out.print("|             Lukas             |\n");
-		    System.out.print("|-----------------------------  |\n");
+		    System.out.print("|-----------------------------    |\n");
+		    System.out.print("| Opção 1 - Cadastrar Cliente     |\n");
+		    System.out.print("| Opção 2 - Listar Cliente        |\n");
+            System.out.print("| Opção 3 - Cadastrar Fornecedor  |\n");
+            System.out.print("| Opção 4 - Listar Fornecedor     |\n");
+		    System.out.print("| Opção 5 - Cadastrar Vendedor    |\n");
+            System.out.print("| Opção 6 - Listar Vendedor       |\n");
+            System.out.print("| Opção 7 - Cadastrar Produto     |\n");
+            System.out.print("| Opção 8 - Listar Produto        |\n");
+            System.out.print("| Opção 9 - Vender                |\n");
+            System.out.print("| Opção 10 - Mostrar Vendas do Dia|\n");
+		    System.out.print("| Opção 11 - Sair                 |\n");
+            System.out.print("| Project by: Pedro, Thiago e     |\n");
+            System.out.print("|             Lukas               |\n");
+		    System.out.print("|-----------------------------    |\n");
 		    System.out.print("Digite uma opção: ");
 
             int opcao = menu.nextInt();
@@ -225,6 +228,26 @@ public class Menu {
                 
                     
                 case 9:
+                    Scanner scanner9 = new Scanner(System.in);
+                    System.out.print("Numero do Cliente para realizar a compra: ");
+                    int numeroCliente = scanner9.nextInt();
+
+                    RegistrarVenda registro = new RegistrarVenda(numeroCliente);
+                    listarVendas.adicRegistrarVenda(registro);
+                    
+                    break;
+                
+                case 10:
+                    ListarVendas.MostrarVendas(ArrayDeLista.getRegistro());
+                    Scanner scanner10 = new Scanner(System.in); 
+                    for(int i = 0; i < 1; i++) {
+
+			            System.out.print(" Precione enter para continuar: ");
+			            scanner10.nextLine();
+		            }
+                    break;
+                
+                case 11:
                     System.out.println("Saindo da solução. . . ");
                     menu.close();
                     running = false;

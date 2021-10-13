@@ -4,7 +4,6 @@ public class App {
         System.out.println("O sistema ainda está em desenvolvimento");
 
         Menu.RodarMenu();
-
         
     }
 }
