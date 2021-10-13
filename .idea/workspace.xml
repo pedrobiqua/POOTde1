@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2246f2f4-de84-4d27-ade1-5bcf4655f9b3" name="Changes" comment="Adicionando os get's em ListarCliente, ListarFornecedor, ListarProduto e ListarVendedor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListarCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListarFornecedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListarFornecedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListarProduto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListarProduto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListarVendas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListarVendas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListarVendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListarVendedor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

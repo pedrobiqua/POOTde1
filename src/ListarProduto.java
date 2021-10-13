@@ -10,10 +10,12 @@ public class ListarProduto {
 
     public void MostraProduto(ArrayList<CadastrarProduto> mostra) {
         for (int i = 0; i < mostra.size(); i++) {
+            System.out.println("|____________________________________");
             System.out.println("Descrição: "+ mostra.get(i).getDescricao()+ 
             " | Quantidade de Produtos: "+ mostra.get(i).getQuantidade());
             System.out.println("Preço do Produto: " + mostra.get(i).getPreço());
             System.out.println("Fornecedor: " + mostra.get(i).getFornecedor());
+            System.out.println("|____________________________________");
         }
     }
  //Apenas para teste, SOBRECARGA DE METODO

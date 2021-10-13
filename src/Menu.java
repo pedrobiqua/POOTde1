@@ -16,7 +16,7 @@ public class Menu {
             Scanner menu = new Scanner(System.in);
 
             System.out.print("##--VENDA DE CONTAS DE LOL--##\n\n");
-		    System.out.print("|-----------------------------    |\n");
+		    System.out.print("|---------------------------------|\n");
 		    System.out.print("| Opção 1 - Cadastrar Cliente     |\n");
 		    System.out.print("| Opção 2 - Listar Cliente        |\n");
             System.out.print("| Opção 3 - Cadastrar Fornecedor  |\n");
@@ -31,7 +31,7 @@ public class Menu {
             System.out.print("| Opção 12 - Sair                 |\n");
             System.out.print("| Project by: Pedro, Thiago e     |\n");
             System.out.print("|             Lukas               |\n");
-		    System.out.print("|-----------------------------    |\n");
+		    System.out.print("|---------------------------------|\n");
 		    System.out.print("Digite uma opção: ");
 
             int opcao = menu.nextInt();
@@ -46,7 +46,7 @@ public class Menu {
                     System.out.print("Sobrenome: ");
                     String sobrenome = scanner.next();
 
-                    System.out.print("Sobrenome: ");
+                    System.out.print("Data de Nascimento: ");
                     String dataNascimento = scanner.next();
                     
                     System.out.print("Telefone: ");
