@@ -69,18 +69,20 @@ public class RegistrarVenda {
                 var listaProdutos = new ListarProduto();
                 listaProdutos.MostraProduto(ArrayDeLista.getListarProduto());
                 Scanner scannerRegistro = new Scanner(System.in);
-                System.out.println("Qual desses produtos deseja comprar? : ");
+                System.out.printf("Qual desses produtos deseja comprar? : ");
                 String compra = scannerRegistro.next();
 
                 for (int j = 0; j < ArrayDeLista.getListarProduto().size(); j++) {
-                    if (ArrayDeLista.getListarProduto().get(j).getDescricao() == compra) {
+                    if (compra.equals(ArrayDeLista.getListarProduto().get(j).getDescricao())){
 
                         //Realizar a compra em si.
                         Scanner tipoPagamento = new Scanner(System.in);
-                        System.out.println("Qual será a forma de pagamento? ");
-                        String formaPag = tipoPagamento.next();
+                        System.out.println("Qual será a forma de pagamento? (1)-Crédito\n(2)-Débito\n(3)-Dinheiro");
+                        int formaPag = tipoPagamento.nextInt();
+
+
                         switch (formaPag) {
-                            case "crédito": 
+                            case 1: 
 
                                 
                                 float precoCredito = ArrayDeLista.getListarProduto().get(j).getPreço();
@@ -89,11 +91,11 @@ public class RegistrarVenda {
                                 int diminuirEstoque = ArrayDeLista.getListarProduto().get(j).getQuantidade() - 1;
                                 
                                 ArrayDeLista.getListarProduto().get(j).setQuantidade(diminuirEstoque);
-                                System.out.printf("O estoque do produto comprado agora é ", diminuirEstoque);
+                                System.out.printf("O estoque do produto comprado agora é " + diminuirEstoque);
                                 tipoDoPagamento = "Crédito";
                                 break;
                         
-                            case "débito":
+                            case 2:
                                 float precoDebito = ArrayDeLista.getListarProduto().get(j).getPreço();
                                 pagDebito += precoDebito;
 
@@ -104,7 +106,7 @@ public class RegistrarVenda {
                                 tipoDoPagamento = "Débito";
                                 break;
                             
-                            case "dinheiro":
+                            case 3:
                                 float precoDinheiro = ArrayDeLista.getListarProduto().get(j).getPreço();
                                 pagDinheiro += precoDinheiro;
 
@@ -131,7 +133,7 @@ public class RegistrarVenda {
     }
 
     public RegistrarVenda(int numeroCliente){
-        Vender(numeroCliente);// Toda vez que o programa instaciar o RegistrarVenda irá rodar a função de venda, utilizando o numero do cliente
+        Vender(numeroCliente);  // Toda vez que o programa instaciar o RegistrarVenda irá rodar a função de venda, utilizando o numero do cliente
         //Digitado anterioriamente.
         
     }
