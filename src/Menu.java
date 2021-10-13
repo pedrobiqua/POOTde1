@@ -27,7 +27,8 @@ public class Menu {
             System.out.print("| Opção 8 - Listar Produto        |\n");
             System.out.print("| Opção 9 - Vender                |\n");
             System.out.print("| Opção 10 - Mostrar Vendas do Dia|\n");
-		    System.out.print("| Opção 11 - Sair                 |\n");
+		    System.out.print("| Opção 11 - Fechamento do Dia    |\n");
+            System.out.print("| Opção 12 - Sair                 |\n");
             System.out.print("| Project by: Pedro, Thiago e     |\n");
             System.out.print("|             Lukas               |\n");
 		    System.out.print("|-----------------------------    |\n");
@@ -221,7 +222,7 @@ public class Menu {
 		
 		            for(int i = 0; i < 1; i++) {
 
-			            System.out.print(" Precione enter para continuar: ");
+			            System.out.print("Pressione enter para continuar: ");
 			            scanner8.nextLine();
 		            }
                     break;
@@ -242,12 +243,16 @@ public class Menu {
                     Scanner scanner10 = new Scanner(System.in); 
                     for(int i = 0; i < 1; i++) {
 
-			            System.out.print(" Precione enter para continuar: ");
+			            System.out.print(" Pressione enter para continuar: ");
 			            scanner10.nextLine();
 		            }
                     break;
                 
                 case 11:
+                    FechamentoDoDia fechamentoDoDia = new FechamentoDoDia();
+                    fechamentoDoDia.MostraLucroDoDia();
+                    break;
+                case 12:
                     System.out.println("Saindo da solução. . . ");
                     menu.close();
                     running = false;

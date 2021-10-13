@@ -12,7 +12,7 @@ public class App {
         listarProduto.MostraProduto(produto);
 
 
-        //Menu.RodarMenu();
+        Menu.RodarMenu();
         
     }
 }

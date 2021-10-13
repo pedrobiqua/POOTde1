@@ -4,9 +4,9 @@ public class RegistrarVenda {
     private int clienteDaVenda;
     private String tipoDoPagamento;
     private float precoProduto;
-    private float pagCredito;
-    private float pagDebito;
-    private float pagDinheiro;
+    private float pagCredito = 0f;
+    private float pagDebito = 0f;
+    private float pagDinheiro = 0f;
 
     //======Get=====
 
