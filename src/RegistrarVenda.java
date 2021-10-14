@@ -7,6 +7,9 @@ public class RegistrarVenda {
     private float pagCredito = 0f;
     private float pagDebito = 0f;
     private float pagDinheiro = 0f;
+    private float parcela = 0f;
+    private float juros = 0f;
+    private float jurosTotal = 0f;
 
     //======Get=====
 
@@ -86,6 +89,77 @@ public class RegistrarVenda {
 
                                 
                                 float precoCredito = ArrayDeLista.getListarProduto().get(j).getPreço();
+
+                                Scanner parcelamento = new Scanner(System.in);
+                                System.out.println("Quer parcelar? Em quantas vezes? (Máximo 10 vezes, digite 1 para pagar à vista)");
+                                int parcelas = parcelamento.nextInt();
+
+                                switch (parcelas) {
+                                    case 1:
+                                    System.out.format("Selecionado: Pagamento à vista no preço de %f \n", precoCredito);
+                                    break;
+
+                                    case 2:
+                                    parcela = precoCredito / 2;
+                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", parcela);
+                                    break;
+
+                                    case 3:
+                                    parcela = precoCredito / 3;
+                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", parcela);
+                                    break;
+
+                                    case 4:
+                                    parcela = precoCredito / 4;
+                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", parcela);
+                                    break;
+
+                                    case 5:
+                                    parcela = precoCredito / 5;
+                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", parcela);
+                                    break;
+
+                                    case 6:
+                                    parcela = precoCredito / 6;
+                                    juros = parcela + (parcela / 100 * 5);
+                                    jurosTotal = juros * 6; 
+                                    precoCredito = jurosTotal;
+                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", juros);
+                                    break;
+
+                                    case 7:
+                                    parcela = precoCredito / 7;
+                                    juros = parcela + (parcela / 100 * 5);
+                                    jurosTotal = juros * 7;
+                                    precoCredito = jurosTotal;
+                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", juros);
+                                    break;
+
+                                    case 8:
+                                    parcela = precoCredito / 8;
+                                    juros = parcela + (parcela / 100 * 5);
+                                    jurosTotal = juros * 8;
+                                    precoCredito = jurosTotal;
+                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", juros);
+                                    break;
+
+                                    case 9:
+                                    parcela = precoCredito / 9;
+                                    juros = parcela + (parcela / 100 * 5);
+                                    jurosTotal = juros * 9;
+                                    precoCredito = jurosTotal;
+                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", juros);
+                                    break;
+
+                                    case 10:
+                                    parcela = precoCredito / 10;
+                                    juros = parcela + (parcela / 100 * 5);
+                                    jurosTotal = juros * 10;
+                                    precoCredito = jurosTotal;
+                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", juros);
+                                    break;
+                                }
+
                                 pagCredito += precoCredito;
 
                                 int diminuirEstoque = ArrayDeLista.getListarProduto().get(j).getQuantidade() - 1;

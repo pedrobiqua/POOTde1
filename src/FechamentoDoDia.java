@@ -4,10 +4,6 @@ public class FechamentoDoDia {
     float totalDebito = 0f;
     float totalCredito = 0f;
 
-    public FechamentoDoDia(){
-        int dinheiro;
-        int débito;
-    }
     public void MostraLucroDoDia() {
         for (int i = 0; i < ArrayDeLista.getRegistro().size(); i++) {
             totalDinheiro += ArrayDeLista.getRegistro().get(i).getPagDinheiro();
