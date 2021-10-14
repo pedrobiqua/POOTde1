@@ -12,6 +12,7 @@ public class FechamentoDoDia {
         }
         System.out.format("O total arrecadado em dinheiro hoje foi de: %f \n",totalDinheiro);
         System.out.format("O total arrecadado em débito hoje foi de: %f \n",totalDebito);
+        System.out.format("O total arrecadado hoje foi de: %f \n",totalDebito + totalDinheiro);
         System.out.format("O total arrecadado em crédito hoje foi de: %f, que será contabilizado em 30 dias. \n",totalCredito);
     }
 

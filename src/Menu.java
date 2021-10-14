@@ -15,7 +15,7 @@ public class Menu {
 
             Scanner menu = new Scanner(System.in);
 
-            System.out.print("##--VENDA DE CONTAS DE LOL--##\n\n");
+            System.out.print("\n\n##--VENDA DE CONTAS DE LOL--##\n\n");
 		    System.out.print("|---------------------------------|\n");
 		    System.out.print("| Opção 1 - Cadastrar Cliente     |\n");
 		    System.out.print("| Opção 2 - Listar Cliente        |\n");

@@ -80,7 +80,7 @@ public class RegistrarVenda {
 
                         //Realizar a compra em si.
                         Scanner tipoPagamento = new Scanner(System.in);
-                        System.out.println("Qual será a forma de pagamento? (1)-Crédito\n(2)-Débito\n(3)-Dinheiro");
+                        System.out.println("Qual será a forma de pagamento? \n(1)-Crédito\n(2)-Débito\n(3)-Dinheiro");
                         int formaPag = tipoPagamento.nextInt();
 
 
@@ -165,7 +165,7 @@ public class RegistrarVenda {
                                 int diminuirEstoque = ArrayDeLista.getListarProduto().get(j).getQuantidade() - 1;
                                 
                                 ArrayDeLista.getListarProduto().get(j).setQuantidade(diminuirEstoque);
-                                System.out.printf("O estoque do produto comprado agora é " + diminuirEstoque);
+                                System.out.printf("O estoque do produto comprado agora é: " + diminuirEstoque);
                                 tipoDoPagamento = "Crédito";
                                 break;
                         
@@ -176,7 +176,7 @@ public class RegistrarVenda {
                                 int diminuirEstoque1 = ArrayDeLista.getListarProduto().get(j).getQuantidade() - 1;
                                 
                                 ArrayDeLista.getListarProduto().get(j).setQuantidade(diminuirEstoque1);
-                                System.out.printf("O estoque do produto comprado agora é ", diminuirEstoque1);
+                                System.out.printf("O estoque do produto comprado agora é: " + diminuirEstoque1);
                                 tipoDoPagamento = "Débito";
                                 break;
                             
@@ -187,7 +187,7 @@ public class RegistrarVenda {
                                 int diminuirEstoque2 = ArrayDeLista.getListarProduto().get(j).getQuantidade() - 1;
                                 
                                 ArrayDeLista.getListarProduto().get(j).setQuantidade(diminuirEstoque2);
-                                System.out.printf("O estoque do produto comprado agora é ", diminuirEstoque2);
+                                System.out.printf("O estoque do produto comprado agora é: " + diminuirEstoque2);
                                 tipoDoPagamento = "Dinheiro";
                                 break;
 
