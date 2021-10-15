@@ -63,8 +63,11 @@ public class RegistrarVenda {
         this.tipoDoPagamento = tipoDoPagamento;
     }
     
-    //Antes de aplicar a função de Vender temos que fazer um scanner para colocar o numero do cliente;
-    public void Vender(int numeroCliente) {
+    //Mostrar o comentário especial para o thiago e o Lukas
+    /**
+     * Função para efetuar a venda
+     */
+    public void Vender(int numeroCliente) {//Antes de aplicar a função de Vender temos que fazer um scanner para colocar o numero do cliente;
         for (int i = 0; i < ArrayDeLista.getListarCliente().size(); i++) {
             if (ArrayDeLista.getListarCliente().get(i).getNumero() == numeroCliente) {
                 
