@@ -221,8 +221,7 @@ public class Menu {
                             break;
                         }
                         else{
-                            System.out.println("Esse fornecedor não existe . . .");
-                            break;
+                            System.out.println("Buscando . . .");
                         }
                     }
                     break;
