@@ -4,12 +4,20 @@ public class CadastrarProduto {
     private int Quantidade;
     private Float Preço;
     private String Fornecedor; //Depois colocar para tipo Cadastrar Fornecedor
+    private CadastrarFornecedor Forrnecedor1;
 
-    public CadastrarProduto(String Descricao, int Quantidade, Float Preço,String Fornecedor){
+    public CadastrarProduto(String Descricao, int Quantidade, Float Preço,String Fornecedor){ //Modo antigo
         this.Descricao = Descricao;
         this.Quantidade = Quantidade;
         this.Preço = Preço;
         this.Fornecedor = Fornecedor;
+    }
+
+    public CadastrarProduto(String Descricao, int Quantidade, Float Preço,CadastrarFornecedor Fornecedor){
+        this.Descricao = Descricao;
+        this.Quantidade = Quantidade;
+        this.Preço = Preço;
+        this.Forrnecedor1 = Fornecedor;
     }
 
     public String getDescricao() {
@@ -44,4 +52,12 @@ public class CadastrarProduto {
         Fornecedor = fornecedor;
     }
 
+    public CadastrarFornecedor getForrnecedor1() {
+        return Forrnecedor1;
+    }
+
+    public void setForrnecedor1(CadastrarFornecedor forrnecedor1) {
+        Forrnecedor1 = forrnecedor1;
+    }
+    
 }

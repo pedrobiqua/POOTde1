@@ -14,7 +14,7 @@ public class ListarProduto {
             System.out.println("Descrição: "+ mostra.get(i).getDescricao()+ 
             " | Quantidade de Produtos: "+ mostra.get(i).getQuantidade());
             System.out.println("Preço do Produto: " + mostra.get(i).getPreço());
-            System.out.println("Fornecedor: " + mostra.get(i).getFornecedor());
+            System.out.println("Fornecedor: " + mostra.get(i).getForrnecedor1().getRazaoSocial());
             System.out.println("|____________________________________");
         }
     }
@@ -24,7 +24,7 @@ public class ListarProduto {
         System.out.println("Descrição: "+ mostra.getDescricao()+ 
         " | Quantidade de Produtos: "+ mostra.getQuantidade());
         System.out.println("Preço do Produto: " + mostra.getPreço());
-        System.out.println("Fornecedor: " + mostra.getFornecedor());
+        System.out.println("Fornecedor: " + mostra.getForrnecedor1().getRazaoSocial());
         
     }
 

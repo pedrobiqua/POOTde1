@@ -199,6 +199,7 @@ public class Menu {
                 
 
                 case 7:
+                    CadastrarFornecedor Fornecedor7;
                     Scanner scanner7 = new Scanner(System.in);
                     System.out.print("Descrição do produto: ");
                     String Descrição = scanner7.next();
@@ -209,11 +210,21 @@ public class Menu {
                     System.out.print("Preço do produto(unidade): ");
                     Float Preço = scanner7.nextFloat();
 
-                    System.out.print("Fornecedor");
-                    String Fornecedor7 = scanner7.next();
+                    System.out.print("Razão Social: ");
+                    String input = scanner7.next();
 
-                    CadastrarProduto produto = new CadastrarProduto(Descrição, Quantidade, Preço, Fornecedor7);
-                    listarProduto.adicCadastrarProduto(produto);
+                    for (int i = 0; i < ArrayDeLista.getListarFornecedor().size(); i++) {
+                        if (input.equals(ArrayDeLista.getListarFornecedor().get(i).getRazaoSocial())) {
+                            Fornecedor7 = ArrayDeLista.getListarFornecedor().get(i); 
+                            CadastrarProduto produto = new CadastrarProduto(Descrição, Quantidade, Preço, Fornecedor7);
+                            listarProduto.adicCadastrarProduto(produto);
+                            break;
+                        }
+                        else{
+                            System.out.println("Esse fornecedor não existe . . .");
+                            break;
+                        }
+                    }
                     break;
                 
                 case 8:
