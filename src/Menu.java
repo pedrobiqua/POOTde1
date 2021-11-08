@@ -119,7 +119,21 @@ public class Menu {
                         }
 
                     }else{
-                        System.out.println("Vendedor . . . ");
+                        System.out.println("Bem vindo Vendedor . . . ");
+                        System.out.print("Você deseja Editar[E]?: ");
+                        String edicao2 = scanner2.next();
+
+                        if(edicao2.equals("e") || edicao2.equals("E")) {
+                            System.out.print("Qual campo vc deseja editar?: ");
+                            String campo = scanner2.next();
+
+                            System.out.print("Qual o numero do cliente?: ");
+                            int numbCliente = scanner2.nextInt();
+
+                            System.out.print("Qual a alteracao?: ");
+                            String alteraCliente = scanner2.next();
+                            Validacao.EditarCliente(campo, numbCliente, alteraCliente);
+                        }
                     }
                     break;
 
@@ -168,12 +182,59 @@ public class Menu {
                 case 4:
                     listarFornecedor.MostraFornecedor(ArrayDeLista.getListarFornecedor());
                     Scanner scanner4 = new Scanner(System.in);
-		
-		            for(int i = 0; i < 1; i++) {
 
-			            System.out.print(" Precione enter para continuar: ");
-			            scanner4.nextLine();
-		            }
+                    System.out.print("Login: ");
+                    String login4 = scanner4.next();
+
+                    System.out.print("Senha: ");
+                    String senha4 = scanner4.next();
+
+                    valida = App.ValidaConta(login4, senha4);
+
+                    if ( valida == 0) {
+                        System.out.println("Essa conta não existe");
+                    }else if (valida == 1) {
+                        System.out.println("Bem vindo Admin . . .");
+
+                        System.out.print("Você deseja \n - Editar[E], \n - Remover[R]: ");
+                        String edicao4 = scanner4.next();
+
+                        if(edicao4.equals("e") || edicao4.equals("E")){
+                            System.out.print("Qual campo vc deseja editar?: ");
+                            String campo = scanner4.next();
+
+                            System.out.print("Qual o numero do Fornecedor?: ");
+                            int numbFornecedor = scanner4.nextInt();
+
+                            System.out.print("Qual a alteracao?: ");
+                            String alteraFornecedor = scanner4.next();
+                            Validacao.EditarFornecedor(campo, numbFornecedor, alteraFornecedor);
+                        }
+                        if (edicao4.equals("r") || edicao4.equals("R")) {
+                            System.out.print("Qual numero do Fornecedor que deseja remover?: ");
+                            int campo = scanner4.nextInt();
+
+                            Validacao.RemoverFornecedor(campo);
+
+                        }
+
+                    }else{
+                        System.out.println("Bem vindo Fornecedor . . . ");
+                        System.out.print("Você deseja Editar[E]?: ");
+                        String edicao4 = scanner4.next();
+
+                        if(edicao4.equals("e") || edicao4.equals("E")) {
+                            System.out.print("Qual campo vc deseja editar?: ");
+                            String campo = scanner4.next();
+
+                            System.out.print("Qual o numero do Fornecedor?: ");
+                            int numbFornecedor = scanner4.nextInt();
+
+                            System.out.print("Qual a alteracao?: ");
+                            String alteraFornecedor = scanner4.next();
+                            Validacao.EditarFornecedor(campo, numbFornecedor, alteraFornecedor);
+                        }
+                    }
                     break;
 
 
