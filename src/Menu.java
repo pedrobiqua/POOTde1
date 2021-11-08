@@ -10,6 +10,7 @@ public class Menu {
         ListarFornecedor listarFornecedor = new ListarFornecedor();
         ListarVendedor listarVendedor = new ListarVendedor();
         ListarVendas listarVendas = new ListarVendas();
+        int valida;
 
         while (running) {
 
@@ -79,14 +80,47 @@ public class Menu {
                 
                 case 2:
                     //Roda essa opção
-                    ListaDeCliente.MostraClientes(ArrayDeLista.getListarCliente());
                     Scanner scanner2 = new Scanner(System.in);
-		
-		            for(int i = 0; i < 1; i++) {
+                    ListaDeCliente.MostraClientes(ArrayDeLista.getListarCliente());
 
-			            System.out.print(" Precione enter para continuar: ");
-			            scanner2.nextLine();
-		            }
+                    System.out.print("Login: ");
+                    String login2 = scanner2.next();
+
+                    System.out.print("Senha: ");
+                    String senha2 = scanner2.next();
+                    
+                    valida = App.ValidaConta(login2, senha2);
+
+                    if ( valida == 0) {
+                        System.out.println("Essa conta não existe");
+                    }else if (valida == 1) {
+                        System.out.println("Bem vindo Admin . . .");
+
+                        System.out.print("Você deseja \n - Editar[E], \n - Remover[R]: ");
+                        String edicao2 = scanner2.next();
+
+                        if(edicao2.equals("e") || edicao2.equals("E")){
+                            System.out.print("Qual campo vc deseja editar?: ");
+                            String campo = scanner2.next();
+
+                            System.out.print("Qual o numero do cliente?: ");
+                            int numbCliente = scanner2.nextInt();
+
+                            System.out.print("Qual a alteracao?: ");
+                            String alteraCliente = scanner2.next();
+                            Validacao.EditarCliente(campo, numbCliente, alteraCliente);
+                        }
+                        if (edicao2.equals("r") || edicao2.equals("R")) {
+                            System.out.print("Qual numero do Cliente que deseja remover?: ");
+                            int campo = scanner2.nextInt();
+
+                            Validacao.RemoverCliente(campo);
+
+                        }
+
+                    }else{
+                        System.out.println("Vendedor . . . ");
+                    }
                     break;
 
 
