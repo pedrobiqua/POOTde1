@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
         
@@ -7,17 +9,28 @@ public class App {
         ListarCliente listarCliente = new ListarCliente();
         ListarProduto listarProduto = new ListarProduto();
         ListarFornecedor listarFornecedor = new ListarFornecedor();
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Login: ");
+        String admLogin = scan.nextLine();
+
+        System.out.println("Senha: ");
+        String admSenha = scan.nextLine();
 
         listarFornecedor.adicCadastrarFornecedor(fornecedor);
         listarCliente.adicCadastrarCliente(clientObject);
         listarProduto.adicCadastrarProduto(produto);
 
         listarProduto.MostraProduto(produto);
-
+        boolean run = true;
         //listarProduto.MostraProduto(produto);
-
-
-        Menu.RodarMenu();
+        while(run){
+            if (admLogin.equals("admin") && admSenha.equals("admin")) {
+                Menu.RodarMenu();
+                run = false;
+            }
+        }
+        scan.close();
         
     }
 }
