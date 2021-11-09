@@ -23,7 +23,7 @@ public class ListarFornecedor {
             System.out.println("| Email: " + mostra.get(i).getEndereco());
             System.out.println("| Número: " + mostra.get(i).getNumero());
             System.out.println("| Data de Cadastro: " + mostra.get(i).getDataCadastro());
-            System.out.println("|____________________________________");
+            System.out.println("|____________________________________\n \n");
         }
     }
 

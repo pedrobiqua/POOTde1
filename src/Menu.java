@@ -100,13 +100,15 @@ public class Menu {
                         String edicao2 = scanner2.next();
 
                         if(edicao2.equals("e") || edicao2.equals("E")){
-                            System.out.print("Qual campo vc deseja editar?: ");
+                            System.out.print("Opções: [1]Nome [2]Sobrenome [3]Data de Nascimento [4]Telefone" +
+                                    " [5]CPF [6]Cidade [7]Estado [8]Pais [9]Endereço [10]Data de Cadastro \n");
+                            System.out.print("Digite o numero da opção que você deseja editar: ");
                             String campo = scanner2.next();
 
                             System.out.print("Qual o numero do cliente?: ");
                             int numbCliente = scanner2.nextInt();
 
-                            System.out.print("Qual a alteracao?: ");
+                            System.out.print("Digite a alteração desejada: ");
                             String alteraCliente = scanner2.next();
                             Validacao.EditarCliente(campo, numbCliente, alteraCliente);
                         }
@@ -124,13 +126,15 @@ public class Menu {
                         String edicao2 = scanner2.next();
 
                         if(edicao2.equals("e") || edicao2.equals("E")) {
-                            System.out.print("Qual campo vc deseja editar?: ");
+                            System.out.print("Opções: [1]Nome [2]Razão Social [3]CNPJ [4]Telefone" +
+                                    " [5]Email [6]Cidade [7]Estado [8]Pais [9]Endereço [10]Data de Cadastro \n");
+                            System.out.print("Digite o numero da opção que você deseja editar: ");
                             String campo = scanner2.next();
 
                             System.out.print("Qual o numero do cliente?: ");
                             int numbCliente = scanner2.nextInt();
 
-                            System.out.print("Qual a alteracao?: ");
+                            System.out.print("Digite a alteração desejada: ");
                             String alteraCliente = scanner2.next();
                             Validacao.EditarCliente(campo, numbCliente, alteraCliente);
                         }
@@ -200,13 +204,15 @@ public class Menu {
                         String edicao4 = scanner4.next();
 
                         if(edicao4.equals("e") || edicao4.equals("E")){
-                            System.out.print("Qual campo vc deseja editar?: ");
+                            System.out.print("Opções: [1]Nome [2]Razão Social [3]CNPJ [4]Telefone" +
+                                    " [5]Email [6]Cidade [7]Estado [8]Pais [9]Endereço [10]Data de Cadastro \n");
+                            System.out.print("Digite o numero da opção que você deseja editar: ");
                             String campo = scanner4.next();
 
                             System.out.print("Qual o numero do Fornecedor?: ");
                             int numbFornecedor = scanner4.nextInt();
 
-                            System.out.print("Qual a alteracao?: ");
+                            System.out.print("Digite a alteração desejada: ");
                             String alteraFornecedor = scanner4.next();
                             Validacao.EditarFornecedor(campo, numbFornecedor, alteraFornecedor);
                         }
@@ -224,13 +230,15 @@ public class Menu {
                         String edicao4 = scanner4.next();
 
                         if(edicao4.equals("e") || edicao4.equals("E")) {
-                            System.out.print("Qual campo vc deseja editar?: ");
+                            System.out.print("Opções [1]Nome [2]Razão Social [3]CNPJ [4]Telefone" +
+                                    " [5]Email [6]Cidade [7]Estado [8]Pais [9]Endereço [10]Data de Cadastro \n");
+                            System.out.print("Digite o numero da opção que você deseja editar: ");
                             String campo = scanner4.next();
 
                             System.out.print("Qual o numero do Fornecedor?: ");
                             int numbFornecedor = scanner4.nextInt();
 
-                            System.out.print("Qual a alteracao?: ");
+                            System.out.print("Digite a alteração desejada: ");
                             String alteraFornecedor = scanner4.next();
                             Validacao.EditarFornecedor(campo, numbFornecedor, alteraFornecedor);
                         }

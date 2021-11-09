@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2246f2f4-de84-4d27-ade1-5bcf4655f9b3" name="Changes" comment="Arrumando os prints">
+    <list default="true" id="2246f2f4-de84-4d27-ade1-5bcf4655f9b3" name="Changes" comment="fix menu e Validacao">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListarCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListarFornecedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListarFornecedor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Validacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validacao.java" afterDir="false" />
     </list>
@@ -116,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634160897204</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="EditarFornecedo e RemoverFornecedor feitos">
+      <created>1636414568216</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1636414568216</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,7 +148,9 @@
     <MESSAGE value="Fazendo ListarProduto, ListarVendedor e o App" />
     <MESSAGE value="Adicionando os get's em ListarCliente, ListarFornecedor, ListarProduto e ListarVendedor" />
     <MESSAGE value="Arrumando os prints" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arrumando os prints" />
+    <MESSAGE value="EditarFornecedo e RemoverFornecedor feitos" />
+    <MESSAGE value="fix menu e Validacao" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix menu e Validacao" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -154,12 +165,10 @@
           <line>183</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Validacao.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/POOTde1$App.ic" NAME="App Coverage Results" MODIFIED="1636414912656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

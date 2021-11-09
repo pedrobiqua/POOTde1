@@ -1,70 +1,70 @@
 public class Validacao {
     public static void EditarCliente(String VariavelEditavel, int i, String alteracao) {
         switch (VariavelEditavel) {
-            case "nome":
+            case "1":
                 for (int j = 0; j < ArrayDeLista.getListarCliente().size(); j++) {
                     if (i == ArrayDeLista.getListarCliente().get(j).getNumero()) {
                         ArrayDeLista.getListarCliente().get(j).setNome(alteracao);
                     }
                 }
                 break;
-            case "sobrenome":
+            case "2":
                 for (int j = 0; j < ArrayDeLista.getListarCliente().size(); j++) {
                     if (i == ArrayDeLista.getListarCliente().get(j).getNumero()) {
                         ArrayDeLista.getListarCliente().get(j).setSobrenome(alteracao);
                     }
                 }
                 break;
-            case "dataNasc":
+            case "3":
                 for (int j = 0; j < ArrayDeLista.getListarCliente().size(); j++) {
                     if (i == ArrayDeLista.getListarCliente().get(j).getNumero()) {
                         ArrayDeLista.getListarCliente().get(j).setDataDeNascimento(alteracao);
                     }
                 }
                 break;
-            case "tel":
+            case "4":
                 for (int j = 0; j < ArrayDeLista.getListarCliente().size(); j++) {
                     if (i == ArrayDeLista.getListarCliente().get(j).getNumero()) {
                         ArrayDeLista.getListarCliente().get(j).setTelefone(alteracao);
                     }
                 }
                 break;
-            case "cpf":
+            case "5":
                 for (int j = 0; j < ArrayDeLista.getListarCliente().size(); j++) {
                     if (i == ArrayDeLista.getListarCliente().get(j).getNumero()) {
                         ArrayDeLista.getListarCliente().get(j).setCPF(alteracao);
                     }
                 }
                 break;
-            case "cidade":
+            case "6":
                 for (int j = 0; j < ArrayDeLista.getListarCliente().size(); j++) {
                     if (i == ArrayDeLista.getListarCliente().get(j).getNumero()) {
                         ArrayDeLista.getListarCliente().get(j).setCidade(alteracao);
                     }
                 }
                 break;
-            case "estado":
+            case "7":
                 for (int j = 0; j < ArrayDeLista.getListarCliente().size(); j++) {
                     if (i == ArrayDeLista.getListarCliente().get(j).getNumero()) {
                         ArrayDeLista.getListarCliente().get(j).setEstado(alteracao);
                     }
                 }
                 break;
-            case "pais":
+            case "8":
                 for (int j = 0; j < ArrayDeLista.getListarCliente().size(); j++) {
                     if (i == ArrayDeLista.getListarCliente().get(j).getNumero()) {
                         ArrayDeLista.getListarCliente().get(j).setPais(alteracao);
                     }
                 }
                 break;
-            case "endereco":
+            case "9":
                 for (int j = 0; j < ArrayDeLista.getListarCliente().size(); j++) {
                     if (i == ArrayDeLista.getListarCliente().get(j).getNumero()) {
                         ArrayDeLista.getListarCliente().get(j).setEndereço(alteracao);
                     }
                 }
                 break;
-            case "dataCast":
+            case "10":
                 for (int j = 0; j < ArrayDeLista.getListarCliente().size(); j++) {
                     if (i == ArrayDeLista.getListarCliente().get(j).getNumero()) {
                         ArrayDeLista.getListarCliente().get(j).setDataDeCadastro(alteracao);
@@ -96,70 +96,70 @@ public class Validacao {
 
     public static void EditarFornecedor(String VariavelEditavel, int i, String alteracao) {
         switch (VariavelEditavel) {
-            case "nome":
+            case "1":
                 for (int j = 0; j < ArrayDeLista.getListarFornecedor().size(); j++) {
                     if (i == ArrayDeLista.getListarFornecedor().get(j).getNumero()) {
                         ArrayDeLista.getListarFornecedor().get(j).setNomeFornecedor(alteracao);
                     }
                 }
                 break;
-            case "razao":
+            case "2":
                 for (int j = 0; j < ArrayDeLista.getListarFornecedor().size(); j++) {
                     if (i == ArrayDeLista.getListarFornecedor().get(j).getNumero()) {
                         ArrayDeLista.getListarFornecedor().get(j).setRazaoSocial(alteracao);
                     }
                 }
                 break;
-            case "cnpj":
+            case "3":
                 for (int j = 0; j < ArrayDeLista.getListarFornecedor().size(); j++) {
                     if (i == ArrayDeLista.getListarFornecedor().get(j).getNumero()) {
                         ArrayDeLista.getListarFornecedor().get(j).setCNPJ(alteracao);
                     }
                 }
                 break;
-            case "tel":
+            case "4":
                 for (int j = 0; j < ArrayDeLista.getListarFornecedor().size(); j++) {
                     if (i == ArrayDeLista.getListarFornecedor().get(j).getNumero()) {
                         ArrayDeLista.getListarFornecedor().get(j).setTelefone(alteracao);
                     }
                 }
                 break;
-            case "email":
+            case "5":
                 for (int j = 0; j < ArrayDeLista.getListarFornecedor().size(); j++) {
                     if (i == ArrayDeLista.getListarFornecedor().get(j).getNumero()) {
                         ArrayDeLista.getListarFornecedor().get(j).setEmail(alteracao);
                     }
                 }
                 break;
-            case "cidade":
+            case "6":
                 for (int j = 0; j < ArrayDeLista.getListarFornecedor().size(); j++) {
                     if (i == ArrayDeLista.getListarFornecedor().get(j).getNumero()) {
                         ArrayDeLista.getListarFornecedor().get(j).setCidade(alteracao);
                     }
                 }
                 break;
-            case "estado":
+            case "7":
                 for (int j = 0; j < ArrayDeLista.getListarFornecedor().size(); j++) {
                     if (i == ArrayDeLista.getListarFornecedor().get(j).getNumero()) {
                         ArrayDeLista.getListarFornecedor().get(j).setEstado(alteracao);
                     }
                 }
                 break;
-            case "pais":
+            case "8":
                 for (int j = 0; j < ArrayDeLista.getListarFornecedor().size(); j++) {
                     if (i == ArrayDeLista.getListarFornecedor().get(j).getNumero()) {
                         ArrayDeLista.getListarFornecedor().get(j).setPais(alteracao);
                     }
                 }
                 break;
-            case "endereco":
+            case "9":
                 for (int j = 0; j < ArrayDeLista.getListarFornecedor().size(); j++) {
                     if (i == ArrayDeLista.getListarFornecedor().get(j).getNumero()) {
                         ArrayDeLista.getListarFornecedor().get(j).setEndereco(alteracao);
                     }
                 }
                 break;
-            case "dataCast":
+            case "10":
                 for (int j = 0; j < ArrayDeLista.getListarFornecedor().size(); j++) {
                     if (i == ArrayDeLista.getListarFornecedor().get(j).getNumero()) {
                         ArrayDeLista.getListarFornecedor().get(j).setDataCadastro(alteracao);

@@ -24,7 +24,7 @@ public class ListarCliente {
             System.out.println("|___________________________________");
             System.out.println("| Data do Cadastro: " + mostra.get(i).getDataDeCadastro());
             System.out.println("| Numero ID do cliente: " + mostra.get(i).getNumero());
-            System.out.println("|___________________________________");
+            System.out.println("|___________________________________\n \n");
         }
     }
 
