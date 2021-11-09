@@ -292,12 +292,45 @@ public class Menu {
 
                     listarVendedor.MostraVendedor(ArrayDeLista.getListarVendedor());
                     Scanner scanner6 = new Scanner(System.in);
-		
-		            for(int i = 0; i < 1; i++) {
+                    System.out.print("Login: ");
+                    String login6 = scanner6.next();
 
-			            System.out.print(" Precione enter para continuar: ");
-			            scanner6.nextLine();
-		            }
+                    System.out.print("Senha: ");
+                    String senha6 = scanner6.next();
+                    
+                    valida = App.ValidaConta(login6, senha6);
+
+                    if ( valida == 0) {
+                        System.out.println("Esse usuario não existe");
+                        
+                    }else if (valida == 1) {
+                        System.out.println("Bem vindo Admin");
+                        System.out.print("Você gostaria de Editar[E] ou Remover[R]?:");
+                        String opcao6 = scanner6.next();
+
+                        if (opcao6.equals("r") || opcao6.equals("R")) {
+                            System.out.println("Digite o CPF: ");
+                            String cpf6 = scanner6.next();
+                            Validacao.RemoverVendedor(cpf6);
+                        }else if (opcao6.equals("e") || opcao6.equals("E")) {
+                            System.out.print("Opções: [1]Nome [2]Sobrenome [3]Data de Nascimento [4]Telefone" +
+                                    " [5]CPF [6]Cidade [7]Estado [8]Pais [9]Endereço [10]Data de Cadastro \n");
+                            System.out.print("Digite o numero da opção que você deseja editar: ");
+                            String campo = scanner6.next();
+
+                            System.out.print("Qual o numero do cliente?: ");
+                            String cpf6 = scanner6.next();
+
+                            System.out.print("Digite a alteração desejada: ");
+                            String alteraVendedor = scanner6.next();
+                            Validacao.EditarVendedor(campo, alteraVendedor, cpf6);
+                        }
+
+                    }else{
+                        System.out.println("Aba do vendedor");
+                        CadastrarVendedor busca = Validacao.BuscaVendedor(login6, senha6);
+                        System.out.println("Nome: " + busca.getNome());
+                    }
                     break;
                 
 
@@ -332,12 +365,131 @@ public class Menu {
                 case 8:
                     listarProduto.MostraProduto(ArrayDeLista.getListarProduto());
                     Scanner scanner8 = new Scanner(System.in);
-		
+                    
 		            for(int i = 0; i < 1; i++) {
 
 			            System.out.print("Pressione enter para continuar: ");
 			            scanner8.nextLine();
 		            }
+
+                    System.out.print("");
+                    System.out.print("Login: ");
+                    String login8 = scanner8.next();
+
+                    System.out.print("Senha: ");
+                    String senha8 = scanner8.next();
+                    
+                    valida = App.ValidaConta(login8, senha8);
+
+                    if ( valida == 0) {
+                        System.out.println("Esse usuario não existe");
+                        
+                    }else if (valida == 1) {
+                        System.out.println("Bem vindo Admin");
+                        System.out.print("Você gostaria de Editar[E] ou Remover[R]?:");
+                        String opcao8 = scanner8.next();
+
+                        if (opcao8.equals("r") || opcao8.equals("R")) {
+                            System.out.println("Digite o CNPJ: ");
+                            String cnpj8 = scanner8.next();
+
+                            System.out.println("Digite a descricao do produto: ");
+                            String descricao8 = scanner8.next();
+
+                            Validacao.RemoverProduto(cnpj8, descricao8);
+                        
+                        }else if (opcao8.equals("e") || opcao8.equals("E")) {
+                            System.out.print("Opções: [1]Descrição [2]Quantidade [3]Preço [4]Telefone");
+                            System.out.print("Digite o numero da opção que você deseja editar: ");
+                            int campo = scanner8.nextInt();
+                            switch (campo) {
+                                case 1:
+
+                                    System.out.println("Digite o CNPJ: ");
+                                    String cnpj8 = scanner8.next();
+    
+                                    System.out.println("Digite a descricao do produto: ");
+                                    String descricao8 = scanner8.next();
+
+                                    System.out.print("Nova descrição: ");
+                                    String novaDescricao = scanner8.next();
+
+                                    Validacao.EditarProduto(cnpj8, novaDescricao, descricao8);
+                                    break;
+                                case 2:
+                                    System.out.println("Digite o CNPJ: ");
+                                    String cnpjCase2 = scanner8.next();
+
+                                    System.out.println("Digite a descricao do produto: ");
+                                    String descricaoCase2 = scanner8.next();
+
+                                    System.out.print("Novo Valor: ");
+                                    Float novoValor = scanner8.nextFloat();
+
+                                    Validacao.EditarProduto(cnpjCase2, novoValor, descricaoCase2);
+                                    break;
+                                case 3:
+                                    System.out.println("Digite o CNPJ: ");
+                                    String cnpjCase3 = scanner8.next();
+
+                                    System.out.println("Digite a descricao do produto: ");
+                                    String descricaoCase3 = scanner8.next();
+
+                                    System.out.print("Nova descrição: ");
+                                    Float novaQuantidade = scanner8.nextFloat();
+
+                                    Validacao.EditarProduto(cnpjCase3, novaQuantidade, descricaoCase3);
+                                default:
+                                    break;
+                            }
+                        }
+
+                    }else{
+                        System.out.println("Aba do vendedor");
+                        System.out.print("Opções: [1]Descrição [2]Quantidade [3]Preço [4]Telefone");
+                            System.out.print("Digite o numero da opção que você deseja editar: ");
+                            int campo = scanner8.nextInt();
+                            switch (campo) {
+                                case 1:
+
+                                    System.out.println("Digite o CNPJ: ");
+                                    String cnpj8 = scanner8.next();
+    
+                                    System.out.println("Digite a descricao do produto: ");
+                                    String descricao8 = scanner8.next();
+
+                                    System.out.print("Nova descrição: ");
+                                    String novaDescricao = scanner8.next();
+
+                                    Validacao.EditarProduto(cnpj8, novaDescricao, descricao8);
+                                    break;
+                                case 2:
+                                    System.out.println("Digite o CNPJ: ");
+                                    String cnpjCase2 = scanner8.next();
+
+                                    System.out.println("Digite a descricao do produto: ");
+                                    String descricaoCase2 = scanner8.next();
+
+                                    System.out.print("Novo Valor: ");
+                                    Float novoValor = scanner8.nextFloat();
+
+                                    Validacao.EditarProduto(cnpjCase2, novoValor, descricaoCase2);
+                                    break;
+                                case 3:
+                                    System.out.println("Digite o CNPJ: ");
+                                    String cnpjCase3 = scanner8.next();
+
+                                    System.out.println("Digite a descricao do produto: ");
+                                    String descricaoCase3 = scanner8.next();
+
+                                    System.out.print("Nova descrição: ");
+                                    Float novaQuantidade = scanner8.nextFloat();
+
+                                    Validacao.EditarProduto(cnpjCase3, novaQuantidade, descricaoCase3);
+                                default:
+                                    break;
+                            }
+                    }
                     break;
                 
                     
