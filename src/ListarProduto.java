@@ -15,7 +15,7 @@ public class ListarProduto {
             " | Quantidade de Produtos: "+ mostra.get(i).getQuantidade());
             System.out.println("Preço do Produto: " + mostra.get(i).getPreço());
             System.out.println("Fornecedor: " + mostra.get(i).getForrnecedor1().getRazaoSocial());
-            System.out.println("|____________________________________");
+            System.out.println("|____________________________________ \n \n ");
         }
     }
  //Apenas para teste, SOBRECARGA DE METODO

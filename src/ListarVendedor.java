@@ -22,7 +22,7 @@ public class ListarVendedor {
             System.out.println("| País: " + mostra.get(i).getPais());
             System.out.println("| Endereço: " + mostra.get(i).getEndereço());
             System.out.println("| Data do Cadastro: " + mostra.get(i).getDataDeCadastro());
-            System.out.println("|____________________________________");
+            System.out.println("|____________________________________ \n \n");
             //falta senha e login
         }
     }
