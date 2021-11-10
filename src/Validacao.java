@@ -1,6 +1,6 @@
 public class Validacao {
     public static void EditarCliente(String VariavelEditavel, int i, String alteracao) {
-        //método para editar informações do cliente
+        //Método para editar informações do cliente
         switch (VariavelEditavel) {
             case "1": //Para editar o nome
                 for (int j = 0; j < ArrayDeLista.getListarCliente().size(); j++) {
@@ -89,7 +89,7 @@ public class Validacao {
     }
     //--------------------------------------------------------
     public static void EditarVendedor(String NumeroAlteracao, String alteracao, String cpf) {
-        //método para editar informações do vendedor
+        //Método para editar informações do vendedor
         switch (NumeroAlteracao) {
             case "1":   //Para editar o nome
                 for (int j = 0; j < ArrayDeLista.getListarVendedor().size(); j++) {
@@ -185,7 +185,7 @@ public class Validacao {
     }
 
     public static void RemoverVendedor(String cpf) {
-        //método para remover o vendedor
+        //Método para remover o vendedor
         for (int i = 0; i < ArrayDeLista.getListarVendedor().size(); i++) {
             if (ArrayDeLista.getListarVendedor().get(i).getCPF().equals(cpf)) {
                 ArrayDeLista.getListarVendedor().remove(i);
@@ -194,7 +194,7 @@ public class Validacao {
     }
     //--------------------------------------------------------
     public static void EditarFornecedor(String VariavelEditavel, int i, String alteracao) {
-        //método para editar informações do fornecedor
+        //Método para editar informações do fornecedor
         switch (VariavelEditavel) {
             case "1": //Para editar o nome
                 for (int j = 0; j < ArrayDeLista.getListarFornecedor().size(); j++) {
@@ -274,7 +274,7 @@ public class Validacao {
     }
 
     public static void RemoverFornecedor(int Fornecedor) {
-        //método para remover o fornecedor
+        //Método para remover o fornecedor
         for (int i = 0; i < ArrayDeLista.getListarFornecedor().size(); i++) {
             if (ArrayDeLista.getListarFornecedor().get(i).getNumero() == Fornecedor) {
                 ArrayDeLista.getListarFornecedor().remove(i);
@@ -283,7 +283,7 @@ public class Validacao {
     }
 
     public static void EditarProduto(String cnpj, String Alteracao, String descricao) {
-        //método para editar descrição do produto
+        //Método para editar descrição do produto
         for (int i = 0; i < ArrayDeLista.getListarProduto().size(); i++) {
             if (ArrayDeLista.getListarProduto().get(i).getForrnecedor1().getCNPJ().equals(cnpj) && ArrayDeLista.getListarProduto().get(i).getDescricao().equals(descricao)) {
                 ArrayDeLista.getListarProduto().get(i).setDescricao(Alteracao);
@@ -292,7 +292,7 @@ public class Validacao {
     }
 
     public static void EditarProduto(String cnpj, Float Ateracao, String descricao) {
-        //método para editar preço do produto
+        //Método para editar preço do produto
         for (int i = 0; i < ArrayDeLista.getListarProduto().size(); i++) {
             if (ArrayDeLista.getListarProduto().get(i).getForrnecedor1().getCNPJ().equals(cnpj) && ArrayDeLista.getListarProduto().get(i).getDescricao().equals(descricao)) {
                 ArrayDeLista.getListarProduto().get(i).setPreço(Ateracao);
@@ -301,7 +301,7 @@ public class Validacao {
     }
 
     public static void EditarProduto(String cnpj, int Ateracao, String descricao) {
-        //método para editar a quantidade do produto
+        //Método para editar a quantidade do produto
         for (int i = 0; i < ArrayDeLista.getListarProduto().size(); i++) {
             if (ArrayDeLista.getListarProduto().get(i).getForrnecedor1().getCNPJ().equals(cnpj) && ArrayDeLista.getListarProduto().get(i).getDescricao().equals(descricao)) {
                 ArrayDeLista.getListarProduto().get(i).setQuantidade(Ateracao);
@@ -310,7 +310,7 @@ public class Validacao {
     }
 
     public static void RemoverProduto(String cnpj, String descricao) {
-        //método para remover o produto
+        //Método para remover o produto
         for (int i = 0; i < ArrayDeLista.getListarProduto().size(); i++) {
             if (ArrayDeLista.getListarProduto().get(i).getForrnecedor1().getCNPJ().equals(cnpj) && ArrayDeLista.getListarProduto().get(i).getDescricao().equals(descricao)) {
                 ArrayDeLista.getListarProduto().remove(i);
@@ -319,7 +319,7 @@ public class Validacao {
     }
 
     public static CadastrarVendedor BuscaVendedor(String login, String Senha){
-        //método criado para achar um vendedor e comparar os dador para que ele possa editar suas informações
+        //Método criado para achar um vendedor e comparar os dador para que ele possa editar suas informações
         for (int i = 0; i < ArrayDeLista.getListarVendedor().size(); i++) {
             if (ArrayDeLista.getListarVendedor().get(i).getLogin().equals(login) && ArrayDeLista.getListarVendedor().get(i).getSenha().equals(Senha)) {
                 return ArrayDeLista.getListarVendedor().get(i);
