@@ -452,7 +452,7 @@ public class Menu {
                             Validacao.RemoverProduto(cnpj8, descricao8);
 
                         }else if (opcao8.equals("e") || opcao8.equals("E")) {
-                            System.out.print("Opções: [1]Descrição [2]Quantidade [3]Preço [4]Telefone");
+                            System.out.print("Opções: [1]Descrição [2]Quantidade [3]Preço [4]Telefone \n");
                             System.out.print("Digite o número da opção que você deseja editar: "); //escolha de uma das opções acima para realizar
                             int campo = scanner8.nextInt();
                             switch (campo) {

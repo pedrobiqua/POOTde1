@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2246f2f4-de84-4d27-ade1-5bcf4655f9b3" name="Changes" comment="add comentários">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +155,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636582620654</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add comentários">
+      <created>1636583241089</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1636583241089</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add comentários">
+      <created>1636583419133</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1636583419133</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
