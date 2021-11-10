@@ -313,7 +313,7 @@ public class Validacao {
             }
             
         }
-        CadastrarVendedor vendedor = new CadastrarVendedor("Nome - Nao foi possivel encontrar", "Sobrenome", "dataDeNascimento", "Telefone", "CPF", "Cidade", "Estado", "Pais", "Endereço", "DataDeCadastro", "login", "Senha");
+        CadastrarVendedor vendedor = new CadastrarVendedor("Não foi possivel encontrar - Nome", "Sobrenome", "dataDeNascimento", "Telefone", "CPF", "Cidade", "Estado", "País", "Endereço", "DataDeCadastro", "login", "Senha");
         return vendedor;
 
     }

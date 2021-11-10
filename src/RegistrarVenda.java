@@ -109,17 +109,17 @@ public class RegistrarVenda {
 
                                     case 3:
                                     parcela = precoCredito / 3;
-                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", parcela);
+                                    System.out.format("Selecionado: Pagamento em 3 parcelas no preço de %f cada \n", parcela);
                                     break;
 
                                     case 4:
                                     parcela = precoCredito / 4;
-                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", parcela);
+                                    System.out.format("Selecionado: Pagamento em 4 parcelas no preço de %f cada \n", parcela);
                                     break;
 
                                     case 5:
                                     parcela = precoCredito / 5;
-                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", parcela);
+                                    System.out.format("Selecionado: Pagamento em 5 parcelas no preço de %f cada \n", parcela);
                                     break;
 
                                     case 6:
@@ -127,7 +127,7 @@ public class RegistrarVenda {
                                     juros = parcela + (parcela / 100 * 5);
                                     jurosTotal = juros * 6; 
                                     precoCredito = jurosTotal;
-                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", juros);
+                                    System.out.format("Selecionado: Pagamento em 6 parcelas no preço de %f cada \n", juros);
                                     break;
 
                                     case 7:
@@ -135,7 +135,7 @@ public class RegistrarVenda {
                                     juros = parcela + (parcela / 100 * 5);
                                     jurosTotal = juros * 7;
                                     precoCredito = jurosTotal;
-                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", juros);
+                                    System.out.format("Selecionado: Pagamento em 7 parcelas no preço de %f cada \n", juros);
                                     break;
 
                                     case 8:
@@ -143,7 +143,7 @@ public class RegistrarVenda {
                                     juros = parcela + (parcela / 100 * 5);
                                     jurosTotal = juros * 8;
                                     precoCredito = jurosTotal;
-                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", juros);
+                                    System.out.format("Selecionado: Pagamento em 8 parcelas no preço de %f cada \n", juros);
                                     break;
 
                                     case 9:
@@ -151,7 +151,7 @@ public class RegistrarVenda {
                                     juros = parcela + (parcela / 100 * 5);
                                     jurosTotal = juros * 9;
                                     precoCredito = jurosTotal;
-                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", juros);
+                                    System.out.format("Selecionado: Pagamento em 9 parcelas no preço de %f cada \n", juros);
                                     break;
 
                                     case 10:
@@ -159,7 +159,7 @@ public class RegistrarVenda {
                                     juros = parcela + (parcela / 100 * 5);
                                     jurosTotal = juros * 10;
                                     precoCredito = jurosTotal;
-                                    System.out.format("Selecionado: Pagamento em 2 parcelas no preço de %f cada \n", juros);
+                                    System.out.format("Selecionado: Pagamento em 10 parcelas no preço de %f cada \n", juros);
                                     break;
                                 }
 
@@ -204,7 +204,7 @@ public class RegistrarVenda {
                     }
                 }
             }else{
-                System.out.println("Esse numero de cliente não existe");
+                System.out.println("Esse número de cliente não existe");
             }
         }
     }

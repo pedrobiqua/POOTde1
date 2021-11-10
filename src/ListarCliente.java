@@ -23,7 +23,7 @@ public class ListarCliente {
             System.out.println("| País: " + mostra.get(i).getPais());
             System.out.println("|___________________________________");
             System.out.println("| Data do Cadastro: " + mostra.get(i).getDataDeCadastro());
-            System.out.println("| Numero ID do cliente: " + mostra.get(i).getNumero());
+            System.out.println("| Número ID do cliente: " + mostra.get(i).getNumero());
             System.out.println("|___________________________________\n \n");
         }
     }
