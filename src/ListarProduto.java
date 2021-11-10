@@ -9,7 +9,7 @@ public class ListarProduto {
     }
 
     public void MostraProduto(ArrayList<CadastrarProduto> mostra) {
-        for (int i = 0; i < mostra.size(); i++) {
+        for (int i = 0; i < mostra.size(); i++) { //print da lista de produtos
             System.out.println("|____________________________________");
             System.out.println("Descrição: "+ mostra.get(i).getDescricao()+ 
             " | Quantidade de Produtos: "+ mostra.get(i).getQuantidade());

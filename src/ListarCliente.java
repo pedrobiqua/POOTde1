@@ -10,7 +10,7 @@ public class ListarCliente {
     }
 
     public void MostraClientes(ArrayList<CadastrarCliente> mostra) {
-        for (int i = 0; i < mostra.size(); i++) {
+        for (int i = 0; i < mostra.size(); i++) { //print da lista de clientes
             System.out.println("|___________________________________");
             System.out.println("| Nome do cliente: " + mostra.get(i).getNome() + " " + mostra.get(i).getSobrenome());
             System.out.println("|___________________________________");
@@ -29,7 +29,7 @@ public class ListarCliente {
     }
 
     public void adicCadastrarCliente(CadastrarCliente cadastrarCliente){
-        ArrayDeLista.getListarCliente().add(cadastrarCliente);
+        ArrayDeLista.getListarCliente().add(cadastrarCliente); //Adiciona na ListarCliente
     }
 
     public ArrayList<CadastrarCliente> getListarCliente() {

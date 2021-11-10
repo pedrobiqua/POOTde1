@@ -1,5 +1,6 @@
 public class CadastrarFornecedor {
 
+    //Declarando as Variaveis...
     private String NomeFornecedor;
     private String RazaoSocial;
     private String CNPJ;
@@ -12,6 +13,7 @@ public class CadastrarFornecedor {
     private int Numero;
     private String DataCadastro;
 
+    //construtor da classe
     public CadastrarFornecedor(String NomeFornecedor, String RazaoSocial, String CNPJ,String Email,
                             String Telefone, String Cidade, String Estado, String Pais, String Endereço,
                             String DataDeCadastro, int Numero){
@@ -28,6 +30,7 @@ public class CadastrarFornecedor {
         this.Numero = Numero;
     }
 
+    //Declarando Método Get e Set
     public String getNomeFornecedor() {
         return NomeFornecedor;
     }

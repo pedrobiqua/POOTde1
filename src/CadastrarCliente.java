@@ -13,6 +13,7 @@ public class CadastrarCliente {
     private String DataDeCadastro;
     private int Numero;
 
+    //construtor da classe
     public CadastrarCliente(String Nome, String Sobrenome, String dataDeNascimento,String Telefone,
                             String CPF, String Cidade, String Estado, String Pais, String Endereço,
                             String DataDeCadastro, int Numero){
@@ -30,7 +31,7 @@ public class CadastrarCliente {
     }
 
 
-    //DeclararMetodo
+    //Declarando Método Get e Set
     public String getNome() {
         return Nome;
     }

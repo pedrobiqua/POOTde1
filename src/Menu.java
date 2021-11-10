@@ -39,7 +39,7 @@ public class Menu {
 
             switch (opcao) {
                 case 1:
-                    //Roda essa parte do código
+                    //scaners para o cadastro do cliente
                     Scanner scanner = new Scanner(System.in);
                     System.out.print("Nome: ");
                     String nome = scanner.next();
@@ -74,15 +74,17 @@ public class Menu {
                     System.out.print("Número: ");
                     int Numero = scanner.nextInt();
 
+                    //cadastra o novo cliente
                     CadastrarCliente cliente = new CadastrarCliente(nome, sobrenome, dataNascimento, Telefone, CPF, Cidade, Estado, Pais, Endereço, DataDeCadastro, Numero);
                     ListaDeCliente.adicCadastrarCliente(cliente);
                     break;
 
                 case 2:
-                    //Roda essa opção
+                    //lista os cliente cadastrados
                     Scanner scanner2 = new Scanner(System.in);
                     ListaDeCliente.MostraClientes(ArrayDeLista.getListarCliente());
 
+                    //login e senha necessários para poder editar o remover algo
                     System.out.print("Login: ");
                     String login2 = scanner2.next();
 
@@ -95,14 +97,14 @@ public class Menu {
                         System.out.println("Essa conta não existe");
                     }else if (valida == 1) {
                         System.out.println("Bem vindo Admin . . .");
-
+                        //opções que pode realizar ao realizar login como admin
                         System.out.print("Você deseja \n - Editar[E], \n - Remover[R], \n - Continuar[C]: ");
                         String edicao2 = scanner2.next();
 
                         if(edicao2.equals("e") || edicao2.equals("E")){
                             System.out.print("Opções: [1]Nome [2]Sobrenome [3]Data de Nascimento [4]Telefone" +
                                     " [5]CPF [6]Cidade [7]Estado [8]País [9]Endereço [10]Data de Cadastro \n");
-                            System.out.print("Digite o número da opção que você deseja editar: ");
+                            System.out.print("Digite o número da opção que você deseja editar: "); //escolha de uma das opções acima para realizar
                             String campo = scanner2.next();
 
                             System.out.print("Qual o número do cliente?: ");
@@ -112,26 +114,26 @@ public class Menu {
                             String alteraCliente = scanner2.next();
                             Validacao.EditarCliente(campo, numbCliente, alteraCliente);
                         }
-                        if (edicao2.equals("r") || edicao2.equals("R")) {
+                        if (edicao2.equals("r") || edicao2.equals("R")) { //opção de remover ciente
                             System.out.print("Qual número do cliente que deseja remover?: ");
                             int campo = scanner2.nextInt();
 
                             Validacao.RemoverCliente(campo);
 
                         }
-                        if (edicao2.equals("c") || edicao2.equals("C")) {
+                        if (edicao2.equals("c") || edicao2.equals("C")) { //opção caso vc escolha somente continar na qual ele da print da lista e retorna ao menu
                             ListaDeCliente.MostraClientes(ArrayDeLista.getListarCliente());
                         }
 
                     }else{
                         System.out.println("Bem vindo Vendedor . . . ");
-                        System.out.print("Você deseja Editar[E] ou Continuar[C]? ");
+                        System.out.print("Você deseja Editar[E] ou Continuar[C]? "); //opções que pode realizar ao realizar login como vendedor
                         String edicao2 = scanner2.next();
 
                         if(edicao2.equals("e") || edicao2.equals("E")) {
                             System.out.print("Opções: [1]Nome [2]Razão Social [3]CNPJ [4]Telefone" +
                                     " [5]Email [6]Cidade [7]Estado [8]País [9]Endereço [10]Data de Cadastro \n");
-                            System.out.print("Digite o numero da opção que você deseja editar: ");
+                            System.out.print("Digite o numero da opção que você deseja editar: ");//escolha de uma das opções acima para realizar
                             String campo = scanner2.next();
 
                             System.out.print("Qual o número do cliente? ");
@@ -141,7 +143,7 @@ public class Menu {
                             String alteraCliente = scanner2.next();
                             Validacao.EditarCliente(campo, numbCliente, alteraCliente);
                         }
-                        if (edicao2.equals("c") || edicao2.equals("C")) {
+                        if (edicao2.equals("c") || edicao2.equals("C")) { //opção caso vc escolha somente continar na qual ele da print da lista e retorna ao menu
                             ListaDeCliente.MostraClientes(ArrayDeLista.getListarCliente());
                         }
                     }
@@ -149,7 +151,7 @@ public class Menu {
 
 
                 case 3:
-                    //Roda essa parte do código
+                    //scaners para o cadastro do fornecedor
                     Scanner scanner3 = new Scanner(System.in);
 
                     System.out.print("Nome do Fornecedor: ");
@@ -185,14 +187,17 @@ public class Menu {
                     System.out.print("Data de Cadastro: ");
                     String DataCadastro = scanner3.next();
 
+                    //cadastra o novo cliente
                     CadastrarFornecedor Fornecedor = new CadastrarFornecedor(NomeFornecedor, RazaoSocial, CNPJ, Email, Telefone3, Cidade3, Estado3, Pais3, Endereco3, DataCadastro, Numero3);
                     listarFornecedor.adicCadastrarFornecedor(Fornecedor);
                     break;
 
                 case 4:
+                    //lista os fornecedores cadastrados
                     listarFornecedor.MostraFornecedor(ArrayDeLista.getListarFornecedor());
                     Scanner scanner4 = new Scanner(System.in);
 
+                    //login e senha necessários para poder editar o remover algo
                     System.out.print("Login: ");
                     String login4 = scanner4.next();
 
@@ -205,14 +210,14 @@ public class Menu {
                         System.out.println("Essa conta não existe");
                     }else if (valida == 1) {
                         System.out.println("Bem vindo Admin . . .");
-
+                        //opções que pode realizar ao realizar login como admin
                         System.out.print("Você deseja \n - Editar[E], \n - Remover[R], \n - Continuar[C]: ");
                         String edicao4 = scanner4.next();
 
                         if(edicao4.equals("e") || edicao4.equals("E")){
                             System.out.print("Opções: [1]Nome [2]Razão Social [3]CNPJ [4]Telefone" +
                                     " [5]Email [6]Cidade [7]Estado [8]País [9]Endereço [10]Data de Cadastro \n");
-                            System.out.print("Digite o numero da opção que você deseja editar: ");
+                            System.out.print("Digite o numero da opção que você deseja editar: "); //escolha de uma das opções acima para realizar
                             String campo = scanner4.next();
 
                             System.out.print("Qual o número do Fornecedor?: ");
@@ -222,26 +227,26 @@ public class Menu {
                             String alteraFornecedor = scanner4.next();
                             Validacao.EditarFornecedor(campo, numbFornecedor, alteraFornecedor);
                         }
-                        if (edicao4.equals("r") || edicao4.equals("R")) {
+                        if (edicao4.equals("r") || edicao4.equals("R")) { //opção de remover fornecedor
                             System.out.print("Qual número do Fornecedor que deseja remover?: ");
                             int campo = scanner4.nextInt();
 
                             Validacao.RemoverFornecedor(campo);
 
                         }
-                        if (edicao4.equals("c") || edicao4.equals("C")) {
+                        if (edicao4.equals("c") || edicao4.equals("C")) { //opção caso vc escolha somente continar na qual ele da print da lista e retorna ao menu
                             listarFornecedor.MostraFornecedor(ArrayDeLista.getListarFornecedor());
                         }
 
                     }else{
                         System.out.println("Bem vindo Vendedor . . . ");
-                        System.out.print("Você deseja Editar[E] ou Continuar[C]?: ");
+                        System.out.print("Você deseja Editar[E] ou Continuar[C]?: "); //opções que pode realizar ao realizar login como vendedor
                         String edicao4 = scanner4.next();
 
                         if(edicao4.equals("e") || edicao4.equals("E")) {
                             System.out.print("Opções [1]Nome [2]Razão Social [3]CNPJ [4]Telefone" +
                                     " [5]Email [6]Cidade [7]Estado [8]País [9]Endereço [10]Data de Cadastro \n");
-                            System.out.print("Digite o numero da opção que você deseja editar: ");
+                            System.out.print("Digite o numero da opção que você deseja editar: ");//escolha de uma das opções acima para realizar
                             String campo = scanner4.next();
 
                             System.out.print("Qual o número do Fornecedor?: ");
@@ -251,7 +256,7 @@ public class Menu {
                             String alteraFornecedor = scanner4.next();
                             Validacao.EditarFornecedor(campo, numbFornecedor, alteraFornecedor);
                         }
-                        if (edicao4.equals("c") || edicao4.equals("C")) {
+                        if (edicao4.equals("c") || edicao4.equals("C")) { //opção caso vc escolha somente continar na qual ele da print da lista e retorna ao menu
                             listarFornecedor.MostraFornecedor(ArrayDeLista.getListarFornecedor());
                         }
                     }
@@ -259,6 +264,7 @@ public class Menu {
 
 
                 case 5:
+                    //scaners para o cadastro do fornecedor
                     Scanner scanner5 = new Scanner(System.in);
                     System.out.print("Nome: ");
                     String nome5 = scanner5.next();
@@ -296,14 +302,17 @@ public class Menu {
                     System.out.print("Senha: ");
                     String senha = scanner5.next();
 
+                    //cadastra o novo vendedor
                     CadastrarVendedor vendedor = new CadastrarVendedor(nome5, sobrenome5, dataNascimento5, Telefone5, CPF5, Cidade5, Estado5, Pais5, Endereço5, DataDeCadastro5, login, senha);
                     listarVendedor.adicCadastrarVendedor(vendedor);
                     break;
 
                 case 6:
-
+                    //lista os vendedores cadastrados
                     listarVendedor.MostraVendedor(ArrayDeLista.getListarVendedor());
                     Scanner scanner6 = new Scanner(System.in);
+
+                    //login e senha necessários para poder editar o remover algo
                     System.out.print("Login: ");
                     String login6 = scanner6.next();
 
@@ -317,17 +326,18 @@ public class Menu {
 
                     }else if (valida == 1) {
                         System.out.println("Bem vindo Admin . . . ");
+                        //opções que pode realizar ao realizar login como admin
                         System.out.print("Você deseja \n - Editar[E], \n - Remover[R], \n - Continuar[C]: ");
                         String opcao6 = scanner6.next();
 
-                        if (opcao6.equals("r") || opcao6.equals("R")) {
+                        if (opcao6.equals("r") || opcao6.equals("R")) { //opção de remover vendedor
                             System.out.println("Digite o CPF: ");
                             String cpf6 = scanner6.next();
                             Validacao.RemoverVendedor(cpf6);
                         }else if (opcao6.equals("e") || opcao6.equals("E")) {
                             System.out.print("Opções: [1]Nome [2]Sobrenome [3]Data de Nascimento [4]Telefone" +
                                     " [5]CPF [6]Cidade [7]Estado [8]País [9]Endereço [10]Data de Cadastro [11]Login [12]Senha \n");
-                            System.out.print("Digite o número da opção que você deseja editar: ");
+                            System.out.print("Digite o número da opção que você deseja editar: ");//escolha de uma das opções acima para realizar
                             String campo = scanner6.next();
 
                             System.out.print("Qual o CPF do Vendedor?: ");
@@ -337,12 +347,12 @@ public class Menu {
                             String alteraVendedor = scanner6.next();
                             Validacao.EditarVendedor(campo, alteraVendedor, cpf6);
                         }
-                        if (opcao6.equals("c") || opcao6.equals("C")) {
+                        if (opcao6.equals("c") || opcao6.equals("C")) { //opção caso vc escolha somente continar na qual ele da print da lista e retorna ao menu
                             listarVendedor.MostraVendedor(ArrayDeLista.getListarVendedor());
                         }
 
                     }else{
-                        System.out.println("Aba do vendedor");
+                        System.out.println("Aba do vendedor");  //opção pra editar caso o vendedor consiga fazer login no sistema
                         System.out.println("\n");
                         CadastrarVendedor busca = Validacao.BuscaVendedor(login6, senha6);
                         System.out.println("Nome: " + busca.getNome());
@@ -360,7 +370,7 @@ public class Menu {
                         System.out.println("\n");
                         System.out.print("Opções: [1]Nome [2]Sobrenome [3]Data de Nascimento [4]Telefone" +
                                 " [5]CPF [6]Cidade [7]Estado [8]País [9]Endereço [10]Data de Cadastro [11]Login [12]Senha \n");
-                        System.out.print("Digite o número da opção que você deseja editar: ");
+                        System.out.print("Digite o número da opção que você deseja editar: "); //escolha de uma das opções acima para realizar
                         String campo = scanner6.next();
 
                         System.out.print("Qual o CPF do vendedor?: ");
@@ -374,6 +384,7 @@ public class Menu {
 
 
                 case 7:
+                    //scaners para o cadastro de produto
                     CadastrarFornecedor Fornecedor7;
                     Scanner scanner7 = new Scanner(System.in);
                     System.out.print("Descrição do produto: ");
@@ -387,7 +398,7 @@ public class Menu {
 
                     System.out.print("Razão Social: ");
                     String input = scanner7.next();
-
+                    //For para percorrer a lista de fornecedores para cadastrar no produto junto com as informações obtidas pelo scanner
                     for (int i = 0; i < ArrayDeLista.getListarFornecedor().size(); i++) {
                         if (input.equals(ArrayDeLista.getListarFornecedor().get(i).getRazaoSocial())) {
                             Fornecedor7 = ArrayDeLista.getListarFornecedor().get(i);
@@ -402,6 +413,7 @@ public class Menu {
                     break;
 
                 case 8:
+                    //lista de produtos cadastrados
                     listarProduto.MostraProduto(ArrayDeLista.getListarProduto());
                     Scanner scanner8 = new Scanner(System.in);
 
@@ -411,6 +423,7 @@ public class Menu {
                         scanner8.nextLine();
                     }
 
+                    //login e senha necessários para poder editar o remover algo
                     System.out.println("");
                     System.out.print("Login: ");
                     String login8 = scanner8.next();
@@ -425,10 +438,11 @@ public class Menu {
 
                     }else if (valida == 1) {
                         System.out.println("Bem vindo Admin . . . ");
+                        //opções que pode realizar ao realizar login como admin
                         System.out.print("Você deseja \n - Editar[E], \n - Remover[R], \n - Continuar[C]: ");
                         String opcao8 = scanner8.next();
 
-                        if (opcao8.equals("r") || opcao8.equals("R")) {
+                        if (opcao8.equals("r") || opcao8.equals("R")){ //opção de remover vendedor
                             System.out.println("Digite o CNPJ: ");
                             String cnpj8 = scanner8.next();
 
@@ -439,10 +453,10 @@ public class Menu {
 
                         }else if (opcao8.equals("e") || opcao8.equals("E")) {
                             System.out.print("Opções: [1]Descrição [2]Quantidade [3]Preço [4]Telefone");
-                            System.out.print("Digite o número da opção que você deseja editar: ");
+                            System.out.print("Digite o número da opção que você deseja editar: "); //escolha de uma das opções acima para realizar
                             int campo = scanner8.nextInt();
                             switch (campo) {
-                                case 1:
+                                case 1: //opção para alterar a descrição
 
                                     System.out.println("Digite o CNPJ: ");
                                     String cnpj8 = scanner8.next();
@@ -455,7 +469,7 @@ public class Menu {
 
                                     Validacao.EditarProduto(cnpj8, novaDescricao, descricao8);
                                     break;
-                                case 2:
+                                case 2: //opção para alterar o valor do produto
                                     System.out.println("Digite o CNPJ: ");
                                     String cnpjCase2 = scanner8.next();
 
@@ -467,7 +481,7 @@ public class Menu {
 
                                     Validacao.EditarProduto(cnpjCase2, novoValor, descricaoCase2);
                                     break;
-                                case 3:
+                                case 3: //opção para alterar a quantidade do produto
                                     System.out.println("Digite o CNPJ: ");
                                     String cnpjCase3 = scanner8.next();
 
@@ -482,17 +496,17 @@ public class Menu {
                                     break;
                             }
                         }
-                        if (opcao8.equals("c") || opcao8.equals("C")) {
+                        if (opcao8.equals("c") || opcao8.equals("C")) { //opção caso vc escolha somente continar na qual ele da print da lista e retorna ao menu
                             listarProduto.MostraProduto(ArrayDeLista.getListarProduto());
                         }
 
                     }else{
-                        System.out.println("Aba do Vendedor");
+                        System.out.println("Aba do Vendedor"); //opções que pode realizar ao realizar login como vendedor
                         System.out.print("Opções: [1]Descrição [2]Quantidade [3]Preço [4]Telefone \n");
-                        System.out.print("Digite o número da opção que você deseja editar: ");
+                        System.out.print("Digite o número da opção que você deseja editar: "); //escolha de uma das opções acima para realizar
                         int campo = scanner8.nextInt();
                         switch (campo) {
-                            case 1:
+                            case 1: //opção para alterar a descrição
 
                                 System.out.println("Digite o CNPJ: ");
                                 String cnpj8 = scanner8.next();
@@ -505,7 +519,7 @@ public class Menu {
 
                                 Validacao.EditarProduto(cnpj8, novaDescricao, descricao8);
                                 break;
-                            case 2:
+                            case 2: //opção para alterar o valor do produto
                                 System.out.println("Digite o CNPJ: ");
                                 String cnpjCase2 = scanner8.next();
 
@@ -517,7 +531,7 @@ public class Menu {
 
                                 Validacao.EditarProduto(cnpjCase2, novoValor, descricaoCase2);
                                 break;
-                            case 3:
+                            case 3: //opção para alterar a quantidade do produto
                                 System.out.println("Digite o CNPJ: ");
                                 String cnpjCase3 = scanner8.next();
 
@@ -535,7 +549,7 @@ public class Menu {
                     break;
 
 
-                case 9:
+                case 9: //opção para vender um produto
                     Scanner scanner9 = new Scanner(System.in);
                     System.out.print("Número do cliente para realizar a compra: ");
                     int numeroCliente = scanner9.nextInt();
@@ -546,6 +560,7 @@ public class Menu {
                     break;
 
                 case 10:
+                    //Da print das informações e os produtos que foram vendidos
                     ListarVendas.MostrarVendas(ArrayDeLista.getRegistro());
                     Scanner scanner10 = new Scanner(System.in);
                     for(int i = 0; i < 1; i++) {
@@ -556,6 +571,7 @@ public class Menu {
                     break;
 
                 case 11:
+                    //Mostra o dinheiro que foi recebido
                     FechamentoDoDia fechamentoDoDia = new FechamentoDoDia();
                     fechamentoDoDia.MostraLucroDoDia();
                     break;

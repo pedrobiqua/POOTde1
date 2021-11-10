@@ -23,7 +23,7 @@ public class App {
     }
 
     public static int ValidaConta(String admLogin, String admSenha) {
-            
+         //Função de login e senha para o admin e vendedor
         if (admLogin.equals("admin") && admSenha.equals("admin")) {
             return 1;
         }

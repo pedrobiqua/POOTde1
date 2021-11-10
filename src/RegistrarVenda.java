@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class RegistrarVenda {
+
+    //Declarando as Variaveis...
     private int clienteDaVenda;
     private String tipoDoPagamento;
     private float precoProduto;

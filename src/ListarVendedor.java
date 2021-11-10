@@ -10,7 +10,7 @@ public class ListarVendedor {
     }
 
     public void MostraVendedor(ArrayList<CadastrarVendedor> mostra) {
-        for (int i = 0; i < mostra.size(); i++) {
+        for (int i = 0; i < mostra.size(); i++) { //print da lista de vendedores
             System.out.println("|____________________________________");
             System.out.println("| Nome do Vendedor: " + mostra.get(i).getNome() + " " + mostra.get(i).getSobrenome());
             System.out.println("|____________________________________");
@@ -23,7 +23,6 @@ public class ListarVendedor {
             System.out.println("| Endereço: " + mostra.get(i).getEndereço());
             System.out.println("| Data do Cadastro: " + mostra.get(i).getDataDeCadastro());
             System.out.println("|____________________________________ \n \n");
-            //falta senha e login
         }
     }
 

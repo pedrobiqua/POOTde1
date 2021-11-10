@@ -9,7 +9,7 @@ public class ListarFornecedor {
     }
 
     public void MostraFornecedor(ArrayList<CadastrarFornecedor> mostra) {
-        for (int i = 0; i < mostra.size(); i++) {
+        for (int i = 0; i < mostra.size(); i++) { //print da lista do fornecedores
             System.out.println("|____________________________________");
             System.out.println("| Nome do Fornecedor: " + mostra.get(i).getNomeFornecedor());
             System.out.println("| Nome do Razão Social: " + mostra.get(i).getRazaoSocial());

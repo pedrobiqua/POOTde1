@@ -14,7 +14,7 @@ public class ListarVendas {
         }
     }
 
-    public void adicRegistrarVenda(RegistrarVenda registrarVenda){
+    public void adicRegistrarVenda(RegistrarVenda registrarVenda){ //Adiciona no Registro
         ArrayDeLista.getRegistro().add(registrarVenda);
     }
 }

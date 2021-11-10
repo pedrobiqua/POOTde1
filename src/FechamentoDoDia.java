@@ -1,5 +1,6 @@
 public class FechamentoDoDia {
 
+    //Declarando as Variaveis...
     float totalDinheiro = 0f;
     float totalDebito = 0f;
     float totalCredito = 0f;
