@@ -96,7 +96,7 @@ public class Menu {
                     }else if (valida == 1) {
                         System.out.println("Bem vindo Admin . . .");
 
-                        System.out.print("Você deseja \n - Editar[E], \n - Remover[R]: ");
+                        System.out.print("Você deseja \n - Editar[E], \n - Remover[R], \n - Continuar[C]: ");
                         String edicao2 = scanner2.next();
 
                         if(edicao2.equals("e") || edicao2.equals("E")){
@@ -119,10 +119,13 @@ public class Menu {
                             Validacao.RemoverCliente(campo);
 
                         }
+                        if (edicao2.equals("c") || edicao2.equals("C")) {
+                            ListaDeCliente.MostraClientes(ArrayDeLista.getListarCliente());
+                        }
 
                     }else{
                         System.out.println("Bem vindo Vendedor . . . ");
-                        System.out.print("Você deseja Editar[E]? ");
+                        System.out.print("Você deseja Editar[E] ou Continuar[C]? ");
                         String edicao2 = scanner2.next();
 
                         if(edicao2.equals("e") || edicao2.equals("E")) {
@@ -137,6 +140,9 @@ public class Menu {
                             System.out.print("Digite a alteração desejada ");
                             String alteraCliente = scanner2.next();
                             Validacao.EditarCliente(campo, numbCliente, alteraCliente);
+                        }
+                        if (edicao2.equals("c") || edicao2.equals("C")) {
+                            ListaDeCliente.MostraClientes(ArrayDeLista.getListarCliente());
                         }
                     }
                     break;
@@ -200,7 +206,7 @@ public class Menu {
                     }else if (valida == 1) {
                         System.out.println("Bem vindo Admin . . .");
 
-                        System.out.print("Você deseja \n - Editar[E], \n - Remover[R]: ");
+                        System.out.print("Você deseja \n - Editar[E], \n - Remover[R], \n - Continuar[C]: ");
                         String edicao4 = scanner4.next();
 
                         if(edicao4.equals("e") || edicao4.equals("E")){
@@ -223,10 +229,13 @@ public class Menu {
                             Validacao.RemoverFornecedor(campo);
 
                         }
+                        if (edicao4.equals("c") || edicao4.equals("C")) {
+                            listarFornecedor.MostraFornecedor(ArrayDeLista.getListarFornecedor());
+                        }
 
                     }else{
                         System.out.println("Bem vindo Vendedor . . . ");
-                        System.out.print("Você deseja Editar[E]?: ");
+                        System.out.print("Você deseja Editar[E] ou Continuar[C]?: ");
                         String edicao4 = scanner4.next();
 
                         if(edicao4.equals("e") || edicao4.equals("E")) {
@@ -241,6 +250,9 @@ public class Menu {
                             System.out.print("Digite a alteração desejada: ");
                             String alteraFornecedor = scanner4.next();
                             Validacao.EditarFornecedor(campo, numbFornecedor, alteraFornecedor);
+                        }
+                        if (edicao4.equals("c") || edicao4.equals("C")) {
+                            listarFornecedor.MostraFornecedor(ArrayDeLista.getListarFornecedor());
                         }
                     }
                     break;
@@ -305,7 +317,7 @@ public class Menu {
 
                     }else if (valida == 1) {
                         System.out.println("Bem vindo Admin . . . ");
-                        System.out.print("Você gostaria de Editar[E] ou Remover[R]?:");
+                        System.out.print("Você gostaria de Editar[E], Remover[R], ou Continuar[C]?:");
                         String opcao6 = scanner6.next();
 
                         if (opcao6.equals("r") || opcao6.equals("R")) {
@@ -324,6 +336,9 @@ public class Menu {
                             System.out.print("Digite a alteração desejada: ");
                             String alteraVendedor = scanner6.next();
                             Validacao.EditarVendedor(campo, alteraVendedor, cpf6);
+                        }
+                        if (opcao6.equals("c") || opcao6.equals("C")) {
+                            listarVendedor.MostraVendedor(ArrayDeLista.getListarVendedor());
                         }
 
                     }else{
@@ -396,7 +411,7 @@ public class Menu {
                         scanner8.nextLine();
                     }
 
-                    System.out.print("");
+                    System.out.println("");
                     System.out.print("Login: ");
                     String login8 = scanner8.next();
 
@@ -410,7 +425,7 @@ public class Menu {
 
                     }else if (valida == 1) {
                         System.out.println("Bem vindo Admin . . . ");
-                        System.out.print("Você gostaria de Editar[E] ou Remover[R]?:");
+                        System.out.print("Você gostaria de Editar[E], Remover[R] ou Continuar[C]?:");
                         String opcao8 = scanner8.next();
 
                         if (opcao8.equals("r") || opcao8.equals("R")) {
@@ -466,6 +481,9 @@ public class Menu {
                                 default:
                                     break;
                             }
+                        }
+                        if (opcao8.equals("c") || opcao8.equals("C")) {
+                            listarProduto.MostraProduto(ArrayDeLista.getListarProduto());
                         }
 
                     }else{
