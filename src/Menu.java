@@ -71,7 +71,7 @@ public class Menu {
                     System.out.print("Data de Cadastro: ");
                     String DataDeCadastro = scanner.next();
 
-                    System.out.print("Numero: ");
+                    System.out.print("Número: ");
                     int Numero = scanner.nextInt();
 
                     CadastrarCliente cliente = new CadastrarCliente(nome, sobrenome, dataNascimento, Telefone, CPF, Cidade, Estado, Pais, Endereço, DataDeCadastro, Numero);
@@ -134,7 +134,7 @@ public class Menu {
                             System.out.print("Digite o numero da opção que você deseja editar: ");
                             String campo = scanner2.next();
 
-                            System.out.print("Qual o numero do cliente? ");
+                            System.out.print("Qual o número do cliente? ");
                             int numbCliente = scanner2.nextInt();
 
                             System.out.print("Digite a alteração desejada ");
@@ -179,7 +179,7 @@ public class Menu {
                     System.out.print("Endereço: ");
                     String Endereco3 = scanner3.next();
 
-                    System.out.print("Numero: ");
+                    System.out.print("Número: ");
                     int Numero3 = scanner3.nextInt();
 
                     System.out.print("Data de Cadastro: ");
@@ -215,7 +215,7 @@ public class Menu {
                             System.out.print("Digite o numero da opção que você deseja editar: ");
                             String campo = scanner4.next();
 
-                            System.out.print("Qual o numero do Fornecedor?: ");
+                            System.out.print("Qual o número do Fornecedor?: ");
                             int numbFornecedor = scanner4.nextInt();
 
                             System.out.print("Digite a alteração desejada: ");
@@ -223,7 +223,7 @@ public class Menu {
                             Validacao.EditarFornecedor(campo, numbFornecedor, alteraFornecedor);
                         }
                         if (edicao4.equals("r") || edicao4.equals("R")) {
-                            System.out.print("Qual numero do Fornecedor que deseja remover?: ");
+                            System.out.print("Qual número do Fornecedor que deseja remover?: ");
                             int campo = scanner4.nextInt();
 
                             Validacao.RemoverFornecedor(campo);
@@ -244,7 +244,7 @@ public class Menu {
                             System.out.print("Digite o numero da opção que você deseja editar: ");
                             String campo = scanner4.next();
 
-                            System.out.print("Qual o numero do Fornecedor?: ");
+                            System.out.print("Qual o número do Fornecedor?: ");
                             int numbFornecedor = scanner4.nextInt();
 
                             System.out.print("Digite a alteração desejada: ");
@@ -313,11 +313,11 @@ public class Menu {
                     valida = App.ValidaConta(login6, senha6);
 
                     if ( valida == 0) {
-                        System.out.println("Esse usuario não existe");
+                        System.out.println("Esse usuário não existe");
 
                     }else if (valida == 1) {
                         System.out.println("Bem vindo Admin . . . ");
-                        System.out.print("Você gostaria de Editar[E], Remover[R], ou Continuar[C]?:");
+                        System.out.print("Você deseja \n - Editar[E], \n - Remover[R], \n - Continuar[C]: ");
                         String opcao6 = scanner6.next();
 
                         if (opcao6.equals("r") || opcao6.equals("R")) {
@@ -327,7 +327,7 @@ public class Menu {
                         }else if (opcao6.equals("e") || opcao6.equals("E")) {
                             System.out.print("Opções: [1]Nome [2]Sobrenome [3]Data de Nascimento [4]Telefone" +
                                     " [5]CPF [6]Cidade [7]Estado [8]País [9]Endereço [10]Data de Cadastro [11]Login [12]Senha \n");
-                            System.out.print("Digite o numero da opção que você deseja editar: ");
+                            System.out.print("Digite o número da opção que você deseja editar: ");
                             String campo = scanner6.next();
 
                             System.out.print("Qual o CPF do Vendedor?: ");
@@ -360,7 +360,7 @@ public class Menu {
                         System.out.println("\n");
                         System.out.print("Opções: [1]Nome [2]Sobrenome [3]Data de Nascimento [4]Telefone" +
                                 " [5]CPF [6]Cidade [7]Estado [8]País [9]Endereço [10]Data de Cadastro [11]Login [12]Senha \n");
-                        System.out.print("Digite o numero da opção que você deseja editar: ");
+                        System.out.print("Digite o número da opção que você deseja editar: ");
                         String campo = scanner6.next();
 
                         System.out.print("Qual o CPF do vendedor?: ");
@@ -425,7 +425,7 @@ public class Menu {
 
                     }else if (valida == 1) {
                         System.out.println("Bem vindo Admin . . . ");
-                        System.out.print("Você gostaria de Editar[E], Remover[R] ou Continuar[C]?:");
+                        System.out.print("Você deseja \n - Editar[E], \n - Remover[R], \n - Continuar[C]: ");
                         String opcao8 = scanner8.next();
 
                         if (opcao8.equals("r") || opcao8.equals("R")) {

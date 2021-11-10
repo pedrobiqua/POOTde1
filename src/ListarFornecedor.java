@@ -21,7 +21,7 @@ public class ListarFornecedor {
             System.out.println("| Estado " + mostra.get(i).getEstado());
             System.out.println("| País: " + mostra.get(i).getPais());
             System.out.println("| Email: " + mostra.get(i).getEndereco());
-            System.out.println("| Número: " + mostra.get(i).getNumero());
+            System.out.println("| Número ID do Fornecedor: " + mostra.get(i).getNumero());
             System.out.println("| Data de Cadastro: " + mostra.get(i).getDataCadastro());
             System.out.println("|____________________________________\n \n");
         }
