@@ -1,4 +1,4 @@
-## Trabalho TDE
+## Trabalho Semestral
 
 Projeto da matéria de Programação Orientada a Objeto
 
